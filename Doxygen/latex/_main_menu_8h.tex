@@ -1,0 +1,289 @@
+\hypertarget{_main_menu_8h}{}\section{Main\+Menu.\+h File Reference}
+\label{_main_menu_8h}\index{Main\+Menu.\+h@{Main\+Menu.\+h}}
+
+
+Utilizado para controlar el menú principal y todas sus interacciones\+: Empezar a jugar, mirar los records, cambiar configuraciones y salir. \}.  
+
+
+{\ttfamily \#include \char`\"{}Screen\+Utils.\+h\char`\"{}}\newline
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_main_menu_8h_a0b0d6567a54ac199e11a39b9fb4368a7}\label{_main_menu_8h_a0b0d6567a54ac199e11a39b9fb4368a7}} 
+typedef struct \hyperlink{struct_c_main_menu}{C\+Main\+Menu} $\ast$ \hyperlink{_main_menu_8h_a0b0d6567a54ac199e11a39b9fb4368a7}{C\+Main\+Menu}
+\begin{DoxyCompactList}\small\item\em T\+DA Menu Principal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_c_main_menu}{C\+Main\+Menu} \hyperlink{_main_menu_8h_aa749b12c3db82bf05f75a15403534437}{Main\+Menu\+\_\+\+Load} (\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} p\+Screen\+Utils, int i\+Recursive\+Load)
+\begin{DoxyCompactList}\small\item\em Asigna memoria y retorna un puntero de tipo \hyperlink{struct_c_main_menu}{C\+Main\+Menu}. \end{DoxyCompactList}\item 
+void \hyperlink{_main_menu_8h_a46b1041c7769620affb4e0ade58823dd}{Main\+Menu\+\_\+\+Free} (\hyperlink{struct_c_main_menu}{C\+Main\+Menu} p\+Menu)
+\begin{DoxyCompactList}\small\item\em Libera la memoria asignada por Main\+Menu\+\_\+\+Load. \end{DoxyCompactList}\item 
+int \hyperlink{_main_menu_8h_a3fb0bd6f9ae897e8b3a8e7eba9030764}{Main\+Menu\+\_\+\+Dispatch\+Keys} (\hyperlink{struct_c_main_menu}{C\+Main\+Menu} p\+Menu, \hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} p\+Screen\+Utils)
+\begin{DoxyCompactList}\small\item\em Controla las teclas pulsadas en el menú principal para las acciones. \end{DoxyCompactList}\item 
+int \hyperlink{_main_menu_8h_a52fb63b1323351b7a21c505318c550c0}{Main\+Menu\+\_\+\+Update\+Menu} (\hyperlink{struct_c_main_menu}{C\+Main\+Menu} p\+Menu, \hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} p\+Screen\+Utils)
+\begin{DoxyCompactList}\small\item\em Actualiza el menú completo\+: Renderiza las imágenes y llama las demás funciones para su funcionamiento. \end{DoxyCompactList}\item 
+int \hyperlink{_main_menu_8h_a0927f130067205a11f3fbdd6d7e383fe}{Main\+Menu\+\_\+\+Update\+General} (\hyperlink{struct_c_main_menu}{C\+Main\+Menu} p\+Menu, \hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} p\+Screen\+Utils)
+\begin{DoxyCompactList}\small\item\em Actualiza la sección del menú principal. \end{DoxyCompactList}\item 
+int \hyperlink{_main_menu_8h_ab1f6564c0bcae776243cdac2042b79a1}{Main\+Menu\+\_\+\+Update\+Records} (\hyperlink{struct_c_main_menu}{C\+Main\+Menu} p\+Menu, \hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} p\+Screen\+Utils)
+\begin{DoxyCompactList}\small\item\em Actualiza la sección de records. \end{DoxyCompactList}\item 
+int \hyperlink{_main_menu_8h_af28e27142f1b2c4f00844de909dec025}{Main\+Menu\+\_\+\+Update\+Settings} (\hyperlink{struct_c_main_menu}{C\+Main\+Menu} p\+Menu, \hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} p\+Screen\+Utils)
+\begin{DoxyCompactList}\small\item\em Actualiza la sección de settings. \end{DoxyCompactList}\item 
+int \hyperlink{_main_menu_8h_aff1e31953d6384ecb5c7c724cfd06695}{Main\+Menu\+\_\+\+Save\+Configs} (\hyperlink{struct_c_main_menu}{C\+Main\+Menu} p\+Menu)
+\begin{DoxyCompactList}\small\item\em Guarda las configuraciones editadas por el usuario. \end{DoxyCompactList}\item 
+int \hyperlink{_main_menu_8h_a4e5e1048704d693a943712ac9b75e332}{Main\+Menu\+\_\+\+Load\+Configs} (\hyperlink{struct_c_main_menu}{C\+Main\+Menu} p\+Menu)
+\begin{DoxyCompactList}\small\item\em Carga las configuraciones editadas por el usuario. \end{DoxyCompactList}\item 
+int \hyperlink{_main_menu_8h_a19fb36a679985bbe1a06322cc677ed58}{Main\+Menu\+\_\+\+Exit\+Game} (\hyperlink{struct_c_main_menu}{C\+Main\+Menu} p\+Menu)
+\begin{DoxyCompactList}\small\item\em Sale del juego. \end{DoxyCompactList}\item 
+void \hyperlink{_main_menu_8h_afb1edfd2dd29fe44628f2ca44c4d08ec}{Main\+Menu\+\_\+\+Interpolate\+Arrow} (\hyperlink{struct_c_main_menu}{C\+Main\+Menu} p\+Menu, float f\+Vel)
+\begin{DoxyCompactList}\small\item\em Interpola la posición de la flecha. \end{DoxyCompactList}\item 
+void \hyperlink{_main_menu_8h_a1fa0e959100f028a13a62fe9b59a95d5}{Main\+Menu\+\_\+\+Change\+Configs} (\hyperlink{struct_c_main_menu}{C\+Main\+Menu} p\+Menu, \hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} p\+Screen\+Utils)
+\begin{DoxyCompactList}\small\item\em Aplica las configuraciones según eliga el usuario. \end{DoxyCompactList}\item 
+void \hyperlink{_main_menu_8h_a14eb3a9202a633109668d9ab50a2aebb}{Main\+Menu\+\_\+\+Clamp\+Configs} (\hyperlink{struct_c_main_menu}{C\+Main\+Menu} p\+Menu)
+\begin{DoxyCompactList}\small\item\em Restringe las I\+Ds de las configuraciones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilizado para controlar el menú principal y todas sus interacciones\+: Empezar a jugar, mirar los records, cambiar configuraciones y salir. \}. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_main_menu_8h_a1fa0e959100f028a13a62fe9b59a95d5}\label{_main_menu_8h_a1fa0e959100f028a13a62fe9b59a95d5}} 
+\index{Main\+Menu.\+h@{Main\+Menu.\+h}!Main\+Menu\+\_\+\+Change\+Configs@{Main\+Menu\+\_\+\+Change\+Configs}}
+\index{Main\+Menu\+\_\+\+Change\+Configs@{Main\+Menu\+\_\+\+Change\+Configs}!Main\+Menu.\+h@{Main\+Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+\_\+\+Change\+Configs()}{MainMenu\_ChangeConfigs()}}
+{\footnotesize\ttfamily void Main\+Menu\+\_\+\+Change\+Configs (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_main_menu}{C\+Main\+Menu}}]{p\+Menu,  }\item[{\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen}}]{p\+Screen\+Utils }\end{DoxyParamCaption})}
+
+
+
+Aplica las configuraciones según eliga el usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada del menú principal. \\
+\hline
+{\em Pointer} & Estructura de útiles de pantalla. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_main_menu_8h_a14eb3a9202a633109668d9ab50a2aebb}\label{_main_menu_8h_a14eb3a9202a633109668d9ab50a2aebb}} 
+\index{Main\+Menu.\+h@{Main\+Menu.\+h}!Main\+Menu\+\_\+\+Clamp\+Configs@{Main\+Menu\+\_\+\+Clamp\+Configs}}
+\index{Main\+Menu\+\_\+\+Clamp\+Configs@{Main\+Menu\+\_\+\+Clamp\+Configs}!Main\+Menu.\+h@{Main\+Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+\_\+\+Clamp\+Configs()}{MainMenu\_ClampConfigs()}}
+{\footnotesize\ttfamily void Main\+Menu\+\_\+\+Clamp\+Configs (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_main_menu}{C\+Main\+Menu}}]{p\+Menu }\end{DoxyParamCaption})}
+
+
+
+Restringe las I\+Ds de las configuraciones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada del menú principal. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_main_menu_8h_a3fb0bd6f9ae897e8b3a8e7eba9030764}\label{_main_menu_8h_a3fb0bd6f9ae897e8b3a8e7eba9030764}} 
+\index{Main\+Menu.\+h@{Main\+Menu.\+h}!Main\+Menu\+\_\+\+Dispatch\+Keys@{Main\+Menu\+\_\+\+Dispatch\+Keys}}
+\index{Main\+Menu\+\_\+\+Dispatch\+Keys@{Main\+Menu\+\_\+\+Dispatch\+Keys}!Main\+Menu.\+h@{Main\+Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+\_\+\+Dispatch\+Keys()}{MainMenu\_DispatchKeys()}}
+{\footnotesize\ttfamily int Main\+Menu\+\_\+\+Dispatch\+Keys (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_main_menu}{C\+Main\+Menu}}]{p\+Menu,  }\item[{\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen}}]{p\+Screen\+Utils }\end{DoxyParamCaption})}
+
+
+
+Controla las teclas pulsadas en el menú principal para las acciones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada del menú principal. \\
+\hline
+{\em Pointer} & Estructura creada de útiles de pantalla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna la siguiente acción a cumplir. 0 = nada/entrar a records/entrar a configuraciones, -\/1 = salir del juego, -\/2 = jugar. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_main_menu_8h_a19fb36a679985bbe1a06322cc677ed58}\label{_main_menu_8h_a19fb36a679985bbe1a06322cc677ed58}} 
+\index{Main\+Menu.\+h@{Main\+Menu.\+h}!Main\+Menu\+\_\+\+Exit\+Game@{Main\+Menu\+\_\+\+Exit\+Game}}
+\index{Main\+Menu\+\_\+\+Exit\+Game@{Main\+Menu\+\_\+\+Exit\+Game}!Main\+Menu.\+h@{Main\+Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+\_\+\+Exit\+Game()}{MainMenu\_ExitGame()}}
+{\footnotesize\ttfamily int Main\+Menu\+\_\+\+Exit\+Game (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_main_menu}{C\+Main\+Menu}}]{p\+Menu }\end{DoxyParamCaption})}
+
+
+
+Sale del juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada del menú principal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 para cerrar el juego. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_main_menu_8h_a46b1041c7769620affb4e0ade58823dd}\label{_main_menu_8h_a46b1041c7769620affb4e0ade58823dd}} 
+\index{Main\+Menu.\+h@{Main\+Menu.\+h}!Main\+Menu\+\_\+\+Free@{Main\+Menu\+\_\+\+Free}}
+\index{Main\+Menu\+\_\+\+Free@{Main\+Menu\+\_\+\+Free}!Main\+Menu.\+h@{Main\+Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+\_\+\+Free()}{MainMenu\_Free()}}
+{\footnotesize\ttfamily void Main\+Menu\+\_\+\+Free (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_main_menu}{C\+Main\+Menu}}]{p\+Menu }\end{DoxyParamCaption})}
+
+
+
+Libera la memoria asignada por Main\+Menu\+\_\+\+Load. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Menú principal a liberar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_main_menu_8h_afb1edfd2dd29fe44628f2ca44c4d08ec}\label{_main_menu_8h_afb1edfd2dd29fe44628f2ca44c4d08ec}} 
+\index{Main\+Menu.\+h@{Main\+Menu.\+h}!Main\+Menu\+\_\+\+Interpolate\+Arrow@{Main\+Menu\+\_\+\+Interpolate\+Arrow}}
+\index{Main\+Menu\+\_\+\+Interpolate\+Arrow@{Main\+Menu\+\_\+\+Interpolate\+Arrow}!Main\+Menu.\+h@{Main\+Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+\_\+\+Interpolate\+Arrow()}{MainMenu\_InterpolateArrow()}}
+{\footnotesize\ttfamily void Main\+Menu\+\_\+\+Interpolate\+Arrow (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_main_menu}{C\+Main\+Menu}}]{p\+Menu,  }\item[{float}]{f\+Vel }\end{DoxyParamCaption})}
+
+
+
+Interpola la posición de la flecha. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada del menú principal. \\
+\hline
+{\em Float} & Velocidad de interpolación. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_main_menu_8h_aa749b12c3db82bf05f75a15403534437}\label{_main_menu_8h_aa749b12c3db82bf05f75a15403534437}} 
+\index{Main\+Menu.\+h@{Main\+Menu.\+h}!Main\+Menu\+\_\+\+Load@{Main\+Menu\+\_\+\+Load}}
+\index{Main\+Menu\+\_\+\+Load@{Main\+Menu\+\_\+\+Load}!Main\+Menu.\+h@{Main\+Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+\_\+\+Load()}{MainMenu\_Load()}}
+{\footnotesize\ttfamily \hyperlink{struct_c_main_menu}{C\+Main\+Menu} Main\+Menu\+\_\+\+Load (\begin{DoxyParamCaption}\item[{\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen}}]{p\+Screen\+Utils,  }\item[{int}]{i\+Recursive\+Load }\end{DoxyParamCaption})}
+
+
+
+Asigna memoria y retorna un puntero de tipo \hyperlink{struct_c_main_menu}{C\+Main\+Menu}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura de útiles de pantalla. \\
+\hline
+{\em Int} & Utilizada para especificar si se carga por segunda vez sin cerrar el juego. Sirve para no cargar recursos que no se necesitan más. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna un puntero a la dirección de memoria asignada por esta. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_main_menu_8h_a4e5e1048704d693a943712ac9b75e332}\label{_main_menu_8h_a4e5e1048704d693a943712ac9b75e332}} 
+\index{Main\+Menu.\+h@{Main\+Menu.\+h}!Main\+Menu\+\_\+\+Load\+Configs@{Main\+Menu\+\_\+\+Load\+Configs}}
+\index{Main\+Menu\+\_\+\+Load\+Configs@{Main\+Menu\+\_\+\+Load\+Configs}!Main\+Menu.\+h@{Main\+Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+\_\+\+Load\+Configs()}{MainMenu\_LoadConfigs()}}
+{\footnotesize\ttfamily int Main\+Menu\+\_\+\+Load\+Configs (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_main_menu}{C\+Main\+Menu}}]{p\+Menu }\end{DoxyParamCaption})}
+
+
+
+Carga las configuraciones editadas por el usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada del menú principal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 1 si se guardo correctamente, de lo contrario, retorna 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_main_menu_8h_aff1e31953d6384ecb5c7c724cfd06695}\label{_main_menu_8h_aff1e31953d6384ecb5c7c724cfd06695}} 
+\index{Main\+Menu.\+h@{Main\+Menu.\+h}!Main\+Menu\+\_\+\+Save\+Configs@{Main\+Menu\+\_\+\+Save\+Configs}}
+\index{Main\+Menu\+\_\+\+Save\+Configs@{Main\+Menu\+\_\+\+Save\+Configs}!Main\+Menu.\+h@{Main\+Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+\_\+\+Save\+Configs()}{MainMenu\_SaveConfigs()}}
+{\footnotesize\ttfamily int Main\+Menu\+\_\+\+Save\+Configs (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_main_menu}{C\+Main\+Menu}}]{p\+Menu }\end{DoxyParamCaption})}
+
+
+
+Guarda las configuraciones editadas por el usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada del menú principal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 1 si se guardo correctamente, de lo contrario, retorna 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_main_menu_8h_a0927f130067205a11f3fbdd6d7e383fe}\label{_main_menu_8h_a0927f130067205a11f3fbdd6d7e383fe}} 
+\index{Main\+Menu.\+h@{Main\+Menu.\+h}!Main\+Menu\+\_\+\+Update\+General@{Main\+Menu\+\_\+\+Update\+General}}
+\index{Main\+Menu\+\_\+\+Update\+General@{Main\+Menu\+\_\+\+Update\+General}!Main\+Menu.\+h@{Main\+Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+\_\+\+Update\+General()}{MainMenu\_UpdateGeneral()}}
+{\footnotesize\ttfamily int Main\+Menu\+\_\+\+Update\+General (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_main_menu}{C\+Main\+Menu}}]{p\+Menu,  }\item[{\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen}}]{p\+Screen\+Utils }\end{DoxyParamCaption})}
+
+
+
+Actualiza la sección del menú principal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada del menú principal. \\
+\hline
+{\em Pointer} & Estructura creada de útiles de pantalla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna varios valores. 0 = nada, -\/2 = inicia transición del menú principal al tablero de juego, -\/1 = salir del juego, mayor o igual que 1 = entrada directa al tablero de juego. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_main_menu_8h_a52fb63b1323351b7a21c505318c550c0}\label{_main_menu_8h_a52fb63b1323351b7a21c505318c550c0}} 
+\index{Main\+Menu.\+h@{Main\+Menu.\+h}!Main\+Menu\+\_\+\+Update\+Menu@{Main\+Menu\+\_\+\+Update\+Menu}}
+\index{Main\+Menu\+\_\+\+Update\+Menu@{Main\+Menu\+\_\+\+Update\+Menu}!Main\+Menu.\+h@{Main\+Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+\_\+\+Update\+Menu()}{MainMenu\_UpdateMenu()}}
+{\footnotesize\ttfamily int Main\+Menu\+\_\+\+Update\+Menu (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_main_menu}{C\+Main\+Menu}}]{p\+Menu,  }\item[{\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen}}]{p\+Screen\+Utils }\end{DoxyParamCaption})}
+
+
+
+Actualiza el menú completo\+: Renderiza las imágenes y llama las demás funciones para su funcionamiento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada del menú principal. \\
+\hline
+{\em Pointer} & Estructura creada de útiles de pantalla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna la siguiente acción a cumplir. 0 = nada/entrar a records/entrar a configuraciones, -\/1 = salir del juego, -\/2 = jugar. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_main_menu_8h_ab1f6564c0bcae776243cdac2042b79a1}\label{_main_menu_8h_ab1f6564c0bcae776243cdac2042b79a1}} 
+\index{Main\+Menu.\+h@{Main\+Menu.\+h}!Main\+Menu\+\_\+\+Update\+Records@{Main\+Menu\+\_\+\+Update\+Records}}
+\index{Main\+Menu\+\_\+\+Update\+Records@{Main\+Menu\+\_\+\+Update\+Records}!Main\+Menu.\+h@{Main\+Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+\_\+\+Update\+Records()}{MainMenu\_UpdateRecords()}}
+{\footnotesize\ttfamily int Main\+Menu\+\_\+\+Update\+Records (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_main_menu}{C\+Main\+Menu}}]{p\+Menu,  }\item[{\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen}}]{p\+Screen\+Utils }\end{DoxyParamCaption})}
+
+
+
+Actualiza la sección de records. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada del menú principal. \\
+\hline
+{\em Pointer} & Estructura creada de útiles de pantalla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 si los records no se cargaron, de lo contrario, retorna 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_main_menu_8h_af28e27142f1b2c4f00844de909dec025}\label{_main_menu_8h_af28e27142f1b2c4f00844de909dec025}} 
+\index{Main\+Menu.\+h@{Main\+Menu.\+h}!Main\+Menu\+\_\+\+Update\+Settings@{Main\+Menu\+\_\+\+Update\+Settings}}
+\index{Main\+Menu\+\_\+\+Update\+Settings@{Main\+Menu\+\_\+\+Update\+Settings}!Main\+Menu.\+h@{Main\+Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+\_\+\+Update\+Settings()}{MainMenu\_UpdateSettings()}}
+{\footnotesize\ttfamily int Main\+Menu\+\_\+\+Update\+Settings (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_main_menu}{C\+Main\+Menu}}]{p\+Menu,  }\item[{\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen}}]{p\+Screen\+Utils }\end{DoxyParamCaption})}
+
+
+
+Actualiza la sección de settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada del menú principal. \\
+\hline
+{\em Pointer} & Estructura creada de útiles de pantalla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna -\/1 si los records no se cargaron, de lo contrario, retorna 0. 
+\end{DoxyReturn}

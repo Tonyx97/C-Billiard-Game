@@ -1,0 +1,242 @@
+\hypertarget{_balls_8h}{}\section{Balls.\+h File Reference}
+\label{_balls_8h}\index{Balls.\+h@{Balls.\+h}}
+
+
+Control de las bolas y T\+DA Enlazado de bolas, \hyperlink{struct_c_balls_container}{C\+Balls\+Container}. \}.  
+
+
+{\ttfamily \#include \char`\"{}Ball.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game.\+h\char`\"{}}\newline
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_balls_8h_a0042063be697e5e8d23b2a0e13e8e98e}\label{_balls_8h_a0042063be697e5e8d23b2a0e13e8e98e}} 
+typedef struct \hyperlink{struct_c_ball_container}{C\+Ball\+Container} $\ast$ \hyperlink{_balls_8h_a0042063be697e5e8d23b2a0e13e8e98e}{C\+Ball\+Container}
+\begin{DoxyCompactList}\small\item\em T\+DA \hyperlink{struct_c_ball_container}{C\+Ball\+Container}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_balls_8h_a4a9eb8c841cc7f9dd0a5ddfcb078edcf}\label{_balls_8h_a4a9eb8c841cc7f9dd0a5ddfcb078edcf}} 
+typedef struct \hyperlink{struct_c_balls_container}{C\+Balls\+Container} $\ast$ \hyperlink{_balls_8h_a4a9eb8c841cc7f9dd0a5ddfcb078edcf}{C\+Balls\+Container}
+\begin{DoxyCompactList}\small\item\em T\+DA \hyperlink{struct_c_balls_container}{C\+Balls\+Container}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_c_balls_container}{C\+Balls\+Container} \hyperlink{_balls_8h_adac81b9daebdd647bfc5fb233b7738d9}{Balls\+\_\+\+Load} ()
+\begin{DoxyCompactList}\small\item\em Asigna memoria y retorna el puntero de tipo \hyperlink{struct_c_balls_container}{C\+Balls\+Container}. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_ball}{C\+Ball} \hyperlink{_balls_8h_a00aa11479395597c1f431aacd4c9001f}{Balls\+\_\+\+Get\+Closest\+Ball} (\hyperlink{struct_c_balls_container}{C\+Balls\+Container} p\+Balls, float f\+PosX, float f\+PosY, int i\+Ignore8\+Ball)
+\begin{DoxyCompactList}\small\item\em Obtiene la bola más cercana al punto dado. \end{DoxyCompactList}\item 
+\hyperlink{struct_c_ball}{C\+Ball} \hyperlink{_balls_8h_ae15367ce0688f9f263e6e228f9d60162}{Balls\+\_\+\+Get\+Ball\+By\+Type} (\hyperlink{struct_c_balls_container}{C\+Balls\+Container} p\+Balls, int i\+Type)
+\begin{DoxyCompactList}\small\item\em Obtiene la bola según el tipo dado. \end{DoxyCompactList}\item 
+void \hyperlink{_balls_8h_a28092332dee341eafe8c6d4c293fd342}{Balls\+\_\+\+Free} (\hyperlink{struct_c_balls_container}{C\+Balls\+Container} p\+Balls)
+\begin{DoxyCompactList}\small\item\em Libera la memoria asignada por Balls\+\_\+\+Load. \end{DoxyCompactList}\item 
+void \hyperlink{_balls_8h_a26abb4266f1cd38c81a8a0b31fb0fc50}{Balls\+\_\+\+Init} (\hyperlink{struct_c_balls_container}{C\+Balls\+Container} p\+Balls)
+\begin{DoxyCompactList}\small\item\em Coloca al principio de la partida las bolas en sus posiciones correspondientes. \end{DoxyCompactList}\item 
+void \hyperlink{_balls_8h_adcf5b58d768ef790cbae4712841370d7}{Balls\+\_\+\+Remove} (\hyperlink{struct_c_balls_container}{C\+Balls\+Container} p\+Balls, \hyperlink{struct_c_ball}{C\+Ball} p\+Ball, int i\+Remove\+All)
+\begin{DoxyCompactList}\small\item\em Borra una bola o todo el contenedor entero. \end{DoxyCompactList}\item 
+void \hyperlink{_balls_8h_ac47f80e5b4885a1eea58c3571e09496c}{Balls\+\_\+\+Insert} (\hyperlink{struct_c_balls_container}{C\+Balls\+Container} p\+Balls, \hyperlink{struct_c_ball}{C\+Ball} p\+Ball)
+\begin{DoxyCompactList}\small\item\em Asigna memoria a una nueva bola en el contenedor dado y la inserta en la lista enlazada. \end{DoxyCompactList}\item 
+void \hyperlink{_balls_8h_a1e22d87d830629c8652761afe8f06c33}{Balls\+\_\+\+Reset\+Cols} (\hyperlink{struct_c_balls_container}{C\+Balls\+Container} p\+Balls)
+\begin{DoxyCompactList}\small\item\em Coloca a todas las bolas el estado de colisión a 0. \end{DoxyCompactList}\item 
+void \hyperlink{_balls_8h_a14bcb3297b071ab84b7682f991c552a5}{Balls\+\_\+\+Check\+Collisions} (\hyperlink{struct_c_balls_container}{C\+Balls\+Container} p\+Balls)
+\begin{DoxyCompactList}\small\item\em Actualiza las colisiones entre bolas. \end{DoxyCompactList}\item 
+int \hyperlink{_balls_8h_aec92ab08474d6e4f18299a5dddae6ca5}{Balls\+\_\+\+Update\+And\+Draw} (\hyperlink{struct_c_balls_container}{C\+Balls\+Container} p\+Balls, \hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Actualiza las cinematicas de las bolas y las dibuja en la pantalla. \end{DoxyCompactList}\item 
+int \hyperlink{_balls_8h_ae203341c202476f15dc8b0587ecc558e}{Balls\+\_\+\+Are\+Stopped} (\hyperlink{struct_c_balls_container}{C\+Balls\+Container} p\+Balls)
+\begin{DoxyCompactList}\small\item\em Obtiene que todas las bolas están paradas o no. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Control de las bolas y T\+DA Enlazado de bolas, \hyperlink{struct_c_balls_container}{C\+Balls\+Container}. \}. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_balls_8h_ae203341c202476f15dc8b0587ecc558e}\label{_balls_8h_ae203341c202476f15dc8b0587ecc558e}} 
+\index{Balls.\+h@{Balls.\+h}!Balls\+\_\+\+Are\+Stopped@{Balls\+\_\+\+Are\+Stopped}}
+\index{Balls\+\_\+\+Are\+Stopped@{Balls\+\_\+\+Are\+Stopped}!Balls.\+h@{Balls.\+h}}
+\subsubsection{\texorpdfstring{Balls\+\_\+\+Are\+Stopped()}{Balls\_AreStopped()}}
+{\footnotesize\ttfamily int Balls\+\_\+\+Are\+Stopped (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_balls_container}{C\+Balls\+Container}}]{p\+Balls }\end{DoxyParamCaption})}
+
+
+
+Obtiene que todas las bolas están paradas o no. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Contenedor de bolas donde se va a insertar la bola. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 1 si todas las bolas estan paradas, de lo contrario, retorna 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_balls_8h_a14bcb3297b071ab84b7682f991c552a5}\label{_balls_8h_a14bcb3297b071ab84b7682f991c552a5}} 
+\index{Balls.\+h@{Balls.\+h}!Balls\+\_\+\+Check\+Collisions@{Balls\+\_\+\+Check\+Collisions}}
+\index{Balls\+\_\+\+Check\+Collisions@{Balls\+\_\+\+Check\+Collisions}!Balls.\+h@{Balls.\+h}}
+\subsubsection{\texorpdfstring{Balls\+\_\+\+Check\+Collisions()}{Balls\_CheckCollisions()}}
+{\footnotesize\ttfamily void Balls\+\_\+\+Check\+Collisions (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_balls_container}{C\+Balls\+Container}}]{p\+Balls }\end{DoxyParamCaption})}
+
+
+
+Actualiza las colisiones entre bolas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Contenedor de bolas donde se va a insertar la bola. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_balls_8h_a28092332dee341eafe8c6d4c293fd342}\label{_balls_8h_a28092332dee341eafe8c6d4c293fd342}} 
+\index{Balls.\+h@{Balls.\+h}!Balls\+\_\+\+Free@{Balls\+\_\+\+Free}}
+\index{Balls\+\_\+\+Free@{Balls\+\_\+\+Free}!Balls.\+h@{Balls.\+h}}
+\subsubsection{\texorpdfstring{Balls\+\_\+\+Free()}{Balls\_Free()}}
+{\footnotesize\ttfamily void Balls\+\_\+\+Free (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_balls_container}{C\+Balls\+Container}}]{p\+Balls }\end{DoxyParamCaption})}
+
+
+
+Libera la memoria asignada por Balls\+\_\+\+Load. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Contenedor de bolas a liberar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_balls_8h_ae15367ce0688f9f263e6e228f9d60162}\label{_balls_8h_ae15367ce0688f9f263e6e228f9d60162}} 
+\index{Balls.\+h@{Balls.\+h}!Balls\+\_\+\+Get\+Ball\+By\+Type@{Balls\+\_\+\+Get\+Ball\+By\+Type}}
+\index{Balls\+\_\+\+Get\+Ball\+By\+Type@{Balls\+\_\+\+Get\+Ball\+By\+Type}!Balls.\+h@{Balls.\+h}}
+\subsubsection{\texorpdfstring{Balls\+\_\+\+Get\+Ball\+By\+Type()}{Balls\_GetBallByType()}}
+{\footnotesize\ttfamily \hyperlink{struct_c_ball}{C\+Ball} Balls\+\_\+\+Get\+Ball\+By\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_balls_container}{C\+Balls\+Container}}]{p\+Balls,  }\item[{int}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Obtiene la bola según el tipo dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_balls_container}{C\+Balls\+Container}} & Contendedor de las bolas. \\
+\hline
+{\em Int} & Tipo de la bola. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna la bola del tipo dado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_balls_8h_a00aa11479395597c1f431aacd4c9001f}\label{_balls_8h_a00aa11479395597c1f431aacd4c9001f}} 
+\index{Balls.\+h@{Balls.\+h}!Balls\+\_\+\+Get\+Closest\+Ball@{Balls\+\_\+\+Get\+Closest\+Ball}}
+\index{Balls\+\_\+\+Get\+Closest\+Ball@{Balls\+\_\+\+Get\+Closest\+Ball}!Balls.\+h@{Balls.\+h}}
+\subsubsection{\texorpdfstring{Balls\+\_\+\+Get\+Closest\+Ball()}{Balls\_GetClosestBall()}}
+{\footnotesize\ttfamily \hyperlink{struct_c_ball}{C\+Ball} Balls\+\_\+\+Get\+Closest\+Ball (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_balls_container}{C\+Balls\+Container}}]{p\+Balls,  }\item[{float}]{f\+PosX,  }\item[{float}]{f\+PosY,  }\item[{int}]{i\+Ignore8\+Ball }\end{DoxyParamCaption})}
+
+
+
+Obtiene la bola más cercana al punto dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_balls_container}{C\+Balls\+Container}} & Contendedor de las bolas. \\
+\hline
+{\em Float} & Coordenada X del punto. \\
+\hline
+{\em Float} & Coordenada Y del punto. \\
+\hline
+{\em Int} & Si es 1, ignora la bola 8, de lo contrario, la tiene en cuenta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna la bola más cercana según el punto dado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_balls_8h_a26abb4266f1cd38c81a8a0b31fb0fc50}\label{_balls_8h_a26abb4266f1cd38c81a8a0b31fb0fc50}} 
+\index{Balls.\+h@{Balls.\+h}!Balls\+\_\+\+Init@{Balls\+\_\+\+Init}}
+\index{Balls\+\_\+\+Init@{Balls\+\_\+\+Init}!Balls.\+h@{Balls.\+h}}
+\subsubsection{\texorpdfstring{Balls\+\_\+\+Init()}{Balls\_Init()}}
+{\footnotesize\ttfamily void Balls\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_balls_container}{C\+Balls\+Container}}]{p\+Balls }\end{DoxyParamCaption})}
+
+
+
+Coloca al principio de la partida las bolas en sus posiciones correspondientes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Contenedor de bolas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_balls_8h_ac47f80e5b4885a1eea58c3571e09496c}\label{_balls_8h_ac47f80e5b4885a1eea58c3571e09496c}} 
+\index{Balls.\+h@{Balls.\+h}!Balls\+\_\+\+Insert@{Balls\+\_\+\+Insert}}
+\index{Balls\+\_\+\+Insert@{Balls\+\_\+\+Insert}!Balls.\+h@{Balls.\+h}}
+\subsubsection{\texorpdfstring{Balls\+\_\+\+Insert()}{Balls\_Insert()}}
+{\footnotesize\ttfamily void Balls\+\_\+\+Insert (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_balls_container}{C\+Balls\+Container}}]{p\+Balls,  }\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball }\end{DoxyParamCaption})}
+
+
+
+Asigna memoria a una nueva bola en el contenedor dado y la inserta en la lista enlazada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Contenedor de bolas donde se va a insertar la bola. \\
+\hline
+{\em Pointer} & Bola que se va a insertar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_balls_8h_adac81b9daebdd647bfc5fb233b7738d9}\label{_balls_8h_adac81b9daebdd647bfc5fb233b7738d9}} 
+\index{Balls.\+h@{Balls.\+h}!Balls\+\_\+\+Load@{Balls\+\_\+\+Load}}
+\index{Balls\+\_\+\+Load@{Balls\+\_\+\+Load}!Balls.\+h@{Balls.\+h}}
+\subsubsection{\texorpdfstring{Balls\+\_\+\+Load()}{Balls\_Load()}}
+{\footnotesize\ttfamily \hyperlink{struct_c_balls_container}{C\+Balls\+Container} Balls\+\_\+\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Asigna memoria y retorna el puntero de tipo \hyperlink{struct_c_balls_container}{C\+Balls\+Container}. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un puntero a la dirección de memoria asignada por esta. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_balls_8h_adcf5b58d768ef790cbae4712841370d7}\label{_balls_8h_adcf5b58d768ef790cbae4712841370d7}} 
+\index{Balls.\+h@{Balls.\+h}!Balls\+\_\+\+Remove@{Balls\+\_\+\+Remove}}
+\index{Balls\+\_\+\+Remove@{Balls\+\_\+\+Remove}!Balls.\+h@{Balls.\+h}}
+\subsubsection{\texorpdfstring{Balls\+\_\+\+Remove()}{Balls\_Remove()}}
+{\footnotesize\ttfamily void Balls\+\_\+\+Remove (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_balls_container}{C\+Balls\+Container}}]{p\+Balls,  }\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball,  }\item[{int}]{i\+Remove\+All }\end{DoxyParamCaption})}
+
+
+
+Borra una bola o todo el contenedor entero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Contenedor de bolas. \\
+\hline
+{\em Pointer} & Bola que se desea borrar (solo si i\+Remove\+All es 0) \\
+\hline
+{\em Int} & Define si se borran o no todas las bolas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_balls_8h_a1e22d87d830629c8652761afe8f06c33}\label{_balls_8h_a1e22d87d830629c8652761afe8f06c33}} 
+\index{Balls.\+h@{Balls.\+h}!Balls\+\_\+\+Reset\+Cols@{Balls\+\_\+\+Reset\+Cols}}
+\index{Balls\+\_\+\+Reset\+Cols@{Balls\+\_\+\+Reset\+Cols}!Balls.\+h@{Balls.\+h}}
+\subsubsection{\texorpdfstring{Balls\+\_\+\+Reset\+Cols()}{Balls\_ResetCols()}}
+{\footnotesize\ttfamily void Balls\+\_\+\+Reset\+Cols (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_balls_container}{C\+Balls\+Container}}]{p\+Balls }\end{DoxyParamCaption})}
+
+
+
+Coloca a todas las bolas el estado de colisión a 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Contenedor de bolas donde se va a insertar la bola. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_balls_8h_aec92ab08474d6e4f18299a5dddae6ca5}\label{_balls_8h_aec92ab08474d6e4f18299a5dddae6ca5}} 
+\index{Balls.\+h@{Balls.\+h}!Balls\+\_\+\+Update\+And\+Draw@{Balls\+\_\+\+Update\+And\+Draw}}
+\index{Balls\+\_\+\+Update\+And\+Draw@{Balls\+\_\+\+Update\+And\+Draw}!Balls.\+h@{Balls.\+h}}
+\subsubsection{\texorpdfstring{Balls\+\_\+\+Update\+And\+Draw()}{Balls\_UpdateAndDraw()}}
+{\footnotesize\ttfamily int Balls\+\_\+\+Update\+And\+Draw (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_balls_container}{C\+Balls\+Container}}]{p\+Balls,  }\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Actualiza las cinematicas de las bolas y las dibuja en la pantalla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Contenedor de bolas donde se va a insertar la bola. \\
+\hline
+{\em Pointer} & Bola que se va a insertar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna el estado de las bolas. 0 = todas las bolas quietas, 1 = alguna bola moviéndose, 2 = la bola blanca se metió, 4 = se metió otra bola que no es la blanca 
+\end{DoxyReturn}

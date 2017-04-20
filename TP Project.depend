@@ -1,0 +1,543 @@
+# depslib dependency file v1.0
+1492092676 source:c:\users\tonyx97\desktop\tp project\pantalla.c
+	"Pantalla.h"
+	<stdlib.h>
+	<signal.h>
+	<stdio.h>
+	<math.h>
+
+1487456299 c:\users\tonyx97\desktop\tp project\pantalla.h
+	"SDL2/SDL.h"
+
+1492542473 source:c:\users\tonyx97\desktop\tp project\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"ScreenUtils.h"
+	"Pantalla.h"
+	"MainMenu.h"
+	"Game.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\begin_code.h
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\close_code.h
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<intrin.h>
+	<libkern/OSAtomic.h>
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<mmintrin.h>
+	<mm3dnow.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_pixels.h
+	"begin_code.h"
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276431 c:\users\tonyx97\desktop\tp project\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1376276432 c:\users\tonyx97\desktop\tp project\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1487458729 source:c:\users\tonyx97\desktop\tp project\player.c
+	<stdlib.h>
+	<math.h>
+	"Pantalla.h"
+	"Player.h"
+
+1487683750 c:\users\tonyx97\desktop\tp project\player.h
+
+1487462234 source:c:\users\tonyx97\desktop\tp project\levels.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Pantalla.h"
+	"Levels.h"
+
+1487681643 c:\users\tonyx97\desktop\tp project\levels.h
+
+1487509888 source:f:\x stuff\universidad\asignaturas 1º\c2\tp\tp project\levels.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Pantalla.h"
+	"Levels.h"
+	"Player.h"
+
+1487452699 f:\x stuff\universidad\asignaturas 1º\c2\tp\tp project\pantalla.h
+	"SDL2/SDL.h"
+
+1487509942 f:\x stuff\universidad\asignaturas 1º\c2\tp\tp project\levels.h
+
+1487509747 source:f:\x stuff\universidad\asignaturas 1º\c2\tp\tp project\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	"Pantalla.h"
+	"Player.h"
+	"Levels.h"
+
+1487509427 f:\x stuff\universidad\asignaturas 1º\c2\tp\tp project\player.h
+
+1487452223 source:f:\x stuff\universidad\asignaturas 1º\c2\tp\tp project\pantalla.c
+	"Pantalla.h"
+	<stdlib.h>
+	<signal.h>
+	<stdio.h>
+	<math.h>
+
+1487509428 source:f:\x stuff\universidad\asignaturas 1º\c2\tp\tp project\player.c
+	<stdlib.h>
+	<math.h>
+	"Pantalla.h"
+	"Player.h"
+
+1487678186 source:c:\users\tonyx97\dropbox\universidad\asignaturas\tp\tp project\levels.c
+	<stdio.h>
+	<stdlib.h>
+	"Levels.h"
+	"Pantalla.h"
+	"Player.h"
+
+1487678043 c:\users\tonyx97\dropbox\universidad\asignaturas\tp\tp project\levels.h
+
+1487452699 c:\users\tonyx97\dropbox\universidad\asignaturas\tp\tp project\pantalla.h
+	"SDL2/SDL.h"
+
+1487680150 c:\users\tonyx97\dropbox\universidad\asignaturas\tp\tp project\player.h
+
+1488185059 source:c:\users\tonyx97\dropbox\universidad\asignaturas\tp\tp project\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	"Pantalla.h"
+	"Player.h"
+	"Objects.h"
+	"Levels.h"
+
+1487452223 source:c:\users\tonyx97\dropbox\universidad\asignaturas\tp\tp project\pantalla.c
+	"Pantalla.h"
+	<stdlib.h>
+	<signal.h>
+	<stdio.h>
+	<math.h>
+
+1487765729 source:c:\users\tonyx97\dropbox\universidad\asignaturas\tp\tp project\player.c
+	<stdlib.h>
+	<math.h>
+	"Pantalla.h"
+	"Player.h"
+
+1488185521 c:\users\tonyx97\dropbox\universidad\asignaturas\tp\tp project\objects.h
+
+1487844211 source:c:\users\tonyx97\dropbox\universidad\asignaturas\tp\tp project\objects.c
+	<stdio.h>
+	<stdlib.h>
+	"Pantalla.h"
+	"Objects.h"
+
+1488189121 c:\users\tonyx97\desktop\tp project\objects.h
+
+1491762838 source:c:\users\tonyx97\desktop\tp project\scenes.c
+	<stdio.h>
+	<stdlib.h>
+	"Pantalla.h"
+	"Scenes.h"
+
+1491763157 c:\users\tonyx97\desktop\tp project\scenes.h
+
+1492646552 c:\users\tonyx97\desktop\tp project\mainmenu.h
+	"ScreenUtils.h"
+
+1492649172 source:c:\users\tonyx97\desktop\tp project\mainmenu.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"Pantalla.h"
+	"MainMenu.h"
+	"ScreenUtils.h"
+	"Records.h"
+	"MathUtils.h"
+
+1491833728 source:c:\users\tonyx97\desktop\tp project\screenconverter.c
+	<stdio.h>
+	<stdlib.h>
+	"Pantalla.h"
+	"ScreenConverter.h"
+
+1491833725 c:\users\tonyx97\desktop\tp project\screenconverter.h
+
+1492000752 source:c:\users\tonyx97\desktop\tp project\screenutils.c
+	<stdio.h>
+	<stdlib.h>
+	"Pantalla.h"
+	"ScreenUtils.h"
+
+1492640066 c:\users\tonyx97\desktop\tp project\screenutils.h
+
+1492640056 c:\users\tonyx97\desktop\tp project\records.h
+
+1492622613 source:c:\users\tonyx97\desktop\tp project\records.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Records.h"
+	"MathUtils.h"
+
+1492649207 source:c:\users\tonyx97\desktop\tp project\game.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"Pantalla.h"
+	"Game.h"
+	"Balls.h"
+	"Records.h"
+	"Bot.h"
+
+1492647885 c:\users\tonyx97\desktop\tp project\game.h
+	"ScreenUtils.h"
+
+1492649172 source:c:\users\tonyx97\desktop\tp project\balls.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"ScreenUtils.h"
+	"MathUtils.h"
+	"Balls.h"
+	"Ball.h"
+	"Game.h"
+
+1492646616 c:\users\tonyx97\desktop\tp project\balls.h
+	"Ball.h"
+	"Game.h"
+
+1492648999 source:c:\users\tonyx97\desktop\tp project\ball.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ScreenUtils.h"
+	"MathUtils.h"
+	"Ball.h"
+
+1492647770 c:\users\tonyx97\desktop\tp project\ball.h
+	"Pantalla.h"
+	"Game.h"
+
+1492520302 source:c:\users\tonyx97\desktop\tp project\mathutils.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"MathUtils.h"
+
+1492636481 c:\users\tonyx97\desktop\tp project\mathutils.h
+
+1492257964 source:c:\users\tonyx97\desktop\tp project\messages.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Messages.h"
+
+1492257920 c:\users\tonyx97\desktop\tp project\messages.h
+
+1492646635 source:c:\users\tonyx97\desktop\tp project\bot.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Bot.h"
+	"Ball.h"
+	"MathUtils.h"
+
+1492638161 c:\users\tonyx97\desktop\tp project\bot.h
+	"Ball.h"
+

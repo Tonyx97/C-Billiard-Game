@@ -1,0 +1,121 @@
+\hypertarget{_records_8h}{}\section{Records.\+h File Reference}
+\label{_records_8h}\index{Records.\+h@{Records.\+h}}
+
+
+Utilizado para guardar y cargar los records del usuario. T\+DA contenedor de los records. \}.  
+
+
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_records_8h_a4f76e8c36519b2b4129cd9fe49f5d9ea}\label{_records_8h_a4f76e8c36519b2b4129cd9fe49f5d9ea}} 
+typedef struct \hyperlink{struct_c_records}{C\+Records} $\ast$ \hyperlink{_records_8h_a4f76e8c36519b2b4129cd9fe49f5d9ea}{C\+Records}
+\begin{DoxyCompactList}\small\item\em T\+DA \hyperlink{struct_c_records}{C\+Records}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_c_records}{C\+Records} \hyperlink{_records_8h_af5aa440ead3d1d3a214b23f58f20e57c}{Records\+\_\+\+Load} ()
+\begin{DoxyCompactList}\small\item\em Asigna memoria y retorna el puntero de tipo \hyperlink{struct_c_records}{C\+Records}. \end{DoxyCompactList}\item 
+void \hyperlink{_records_8h_a35fa052035676f2d9e1044063f90fd87}{Records\+\_\+\+Free} (\hyperlink{struct_c_records}{C\+Records} p\+Records)
+\begin{DoxyCompactList}\small\item\em Libera la memoria asignada por Records\+\_\+\+Load. \end{DoxyCompactList}\item 
+int \hyperlink{_records_8h_a6c7d0c67e47eed285a263cd0971b2c4c}{Records\+\_\+\+Save} (int i\+Record)
+\begin{DoxyCompactList}\small\item\em Guarda el record actual en el archivo de records. \end{DoxyCompactList}\item 
+int \hyperlink{_records_8h_a76a61096b86a7d9717bb430f3c31a33f}{Records\+\_\+\+Get\+Records} (\hyperlink{struct_c_records}{C\+Records} p\+Records)
+\begin{DoxyCompactList}\small\item\em Obtiene la cantidad de records. \end{DoxyCompactList}\item 
+int \hyperlink{_records_8h_ac0061520a1960aaa18676f9f854ba3d9}{Records\+\_\+\+Get\+Record\+By\+Index} (\hyperlink{struct_c_records}{C\+Records} p\+Records, int index)
+\begin{DoxyCompactList}\small\item\em Obtiene un record concreto según si índice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilizado para guardar y cargar los records del usuario. T\+DA contenedor de los records. \}. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_records_8h_a35fa052035676f2d9e1044063f90fd87}\label{_records_8h_a35fa052035676f2d9e1044063f90fd87}} 
+\index{Records.\+h@{Records.\+h}!Records\+\_\+\+Free@{Records\+\_\+\+Free}}
+\index{Records\+\_\+\+Free@{Records\+\_\+\+Free}!Records.\+h@{Records.\+h}}
+\subsubsection{\texorpdfstring{Records\+\_\+\+Free()}{Records\_Free()}}
+{\footnotesize\ttfamily void Records\+\_\+\+Free (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_records}{C\+Records}}]{p\+Records }\end{DoxyParamCaption})}
+
+
+
+Libera la memoria asignada por Records\+\_\+\+Load. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Records a liberar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna el máximo de frames por segundo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_records_8h_ac0061520a1960aaa18676f9f854ba3d9}\label{_records_8h_ac0061520a1960aaa18676f9f854ba3d9}} 
+\index{Records.\+h@{Records.\+h}!Records\+\_\+\+Get\+Record\+By\+Index@{Records\+\_\+\+Get\+Record\+By\+Index}}
+\index{Records\+\_\+\+Get\+Record\+By\+Index@{Records\+\_\+\+Get\+Record\+By\+Index}!Records.\+h@{Records.\+h}}
+\subsubsection{\texorpdfstring{Records\+\_\+\+Get\+Record\+By\+Index()}{Records\_GetRecordByIndex()}}
+{\footnotesize\ttfamily int Records\+\_\+\+Get\+Record\+By\+Index (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_records}{C\+Records}}]{p\+Records,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Obtiene un record concreto según si índice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de records. \\
+\hline
+{\em Int} & Índice del record. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna el record según el índice dado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_records_8h_a76a61096b86a7d9717bb430f3c31a33f}\label{_records_8h_a76a61096b86a7d9717bb430f3c31a33f}} 
+\index{Records.\+h@{Records.\+h}!Records\+\_\+\+Get\+Records@{Records\+\_\+\+Get\+Records}}
+\index{Records\+\_\+\+Get\+Records@{Records\+\_\+\+Get\+Records}!Records.\+h@{Records.\+h}}
+\subsubsection{\texorpdfstring{Records\+\_\+\+Get\+Records()}{Records\_GetRecords()}}
+{\footnotesize\ttfamily int Records\+\_\+\+Get\+Records (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_records}{C\+Records}}]{p\+Records }\end{DoxyParamCaption})}
+
+
+
+Obtiene la cantidad de records. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de records. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna la cantidad de records cargados del archivo de records. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_records_8h_af5aa440ead3d1d3a214b23f58f20e57c}\label{_records_8h_af5aa440ead3d1d3a214b23f58f20e57c}} 
+\index{Records.\+h@{Records.\+h}!Records\+\_\+\+Load@{Records\+\_\+\+Load}}
+\index{Records\+\_\+\+Load@{Records\+\_\+\+Load}!Records.\+h@{Records.\+h}}
+\subsubsection{\texorpdfstring{Records\+\_\+\+Load()}{Records\_Load()}}
+{\footnotesize\ttfamily \hyperlink{struct_c_records}{C\+Records} Records\+\_\+\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Asigna memoria y retorna el puntero de tipo \hyperlink{struct_c_records}{C\+Records}. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un puntero a la dirección de memoria asignada por esta. 
+\end{DoxyReturn}
+C\+R\+E\+A\+TE R\+E\+C\+O\+R\+DS F\+I\+LE IF D\+O\+ES N\+OT E\+X\+I\+ST \mbox{\Hypertarget{_records_8h_a6c7d0c67e47eed285a263cd0971b2c4c}\label{_records_8h_a6c7d0c67e47eed285a263cd0971b2c4c}} 
+\index{Records.\+h@{Records.\+h}!Records\+\_\+\+Save@{Records\+\_\+\+Save}}
+\index{Records\+\_\+\+Save@{Records\+\_\+\+Save}!Records.\+h@{Records.\+h}}
+\subsubsection{\texorpdfstring{Records\+\_\+\+Save()}{Records\_Save()}}
+{\footnotesize\ttfamily int Records\+\_\+\+Save (\begin{DoxyParamCaption}\item[{int}]{i\+Record }\end{DoxyParamCaption})}
+
+
+
+Guarda el record actual en el archivo de records. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Int} & Record a guardar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 1 si se guardo correctamente, de lo contrario retorna 0. 
+\end{DoxyReturn}

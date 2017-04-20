@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['game_5faddscore',['Game_AddScore',['../_game_8h.html#a13da29641cdf90c5377d363404b7db84',1,'Game.c']]],
+  ['game_5fcanshoot',['Game_CanShoot',['../_game_8h.html#a5cb8241b33961c1c2d3d6b0a1343afad',1,'Game.c']]],
+  ['game_5fdrawloser',['Game_DrawLoser',['../_game_8h.html#aa0b1b1789797d7025bab35ac03da9c4a',1,'Game.c']]],
+  ['game_5fdrawmsg',['Game_DrawMsg',['../_game_8h.html#abf1cc9ba2bb731b5e6d189c4126ce331',1,'Game.c']]],
+  ['game_5fdrawscore',['Game_DrawScore',['../_game_8h.html#a8e10c095c31e48a9195fde8bf619a5cb',1,'Game.c']]],
+  ['game_5fdrawturn',['Game_DrawTurn',['../_game_8h.html#a6c0c1d7cc620e423c878a61baa17a782',1,'Game.c']]],
+  ['game_5fdrawwinner',['Game_DrawWinner',['../_game_8h.html#ad507325a6d7d6ecee161592693ee83da',1,'Game.c']]],
+  ['game_5ffree',['Game_Free',['../_game_8h.html#a306ddfea42345806490e2a78a5ca94a9',1,'Game.c']]],
+  ['game_5fgameover',['Game_GameOver',['../_game_8h.html#a1058c968a8e7e1e29a281a1262c45c0c',1,'Game.c']]],
+  ['game_5fgetcornerdatabyindex',['Game_GetCornerDataByIndex',['../_game_8h.html#aa914e7be51f8d6bde3f3ff80d74a434e',1,'Game.c']]],
+  ['game_5fgetscore',['Game_GetScore',['../_game_8h.html#ae96b47b6c2597af997d2242ef38d5bbf',1,'Game.c']]],
+  ['game_5fgetturn',['Game_GetTurn',['../_game_8h.html#aac454d276cc7434d4ac25c597413eb72',1,'Game.c']]],
+  ['game_5fisclosing',['Game_IsClosing',['../_game_8h.html#af2e1ca424993590290750eafa5095b5b',1,'Game.c']]],
+  ['game_5fisgameover',['Game_IsGameOver',['../_game_8h.html#a84ec0805b372059ad7e35132fc2ddab1',1,'Game.c']]],
+  ['game_5fload',['Game_Load',['../_game_8h.html#a8c64aea7784ccb732340e17378f38db2',1,'Game.c']]],
+  ['game_5frender',['Game_Render',['../_game_8h.html#ac88f6324360452a905e91f6916b7c904',1,'Game.c']]],
+  ['game_5frenderwinner',['Game_RenderWinner',['../_game_8h.html#a93822ea323a667f9b8610001bcdf3d96',1,'Game.c']]],
+  ['game_5fsaverecord',['Game_SaveRecord',['../_game_8h.html#a10524cc3506d652ccb9391891ab061d0',1,'Game.c']]],
+  ['game_5fshootwhiteball',['Game_ShootWhiteBall',['../_game_8h.html#aa7cdcd31f4b71fc425fb52071b6622e2',1,'Game.c']]],
+  ['game_5fstartclosing',['Game_StartClosing',['../_game_8h.html#afbaa0f44f351e805c2a044ced8bc57ea',1,'Game.c']]],
+  ['game_5ftoggleturn',['Game_ToggleTurn',['../_game_8h.html#aadda313168b3592b4c1554838e4bfc74',1,'Game.c']]],
+  ['game_5fwingame',['Game_WinGame',['../_game_8h.html#a5e3860b71e02746f214920e57a6b64d0',1,'Game.c']]]
+];

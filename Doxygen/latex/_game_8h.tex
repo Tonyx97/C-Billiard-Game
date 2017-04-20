@@ -1,0 +1,417 @@
+\hypertarget{_game_8h}{}\section{Game.\+h File Reference}
+\label{_game_8h}\index{Game.\+h@{Game.\+h}}
+
+
+Funciones de control de flujo del juego y T\+DA \hyperlink{struct_c_game}{C\+Game}. \}.  
+
+
+{\ttfamily \#include \char`\"{}Screen\+Utils.\+h\char`\"{}}\newline
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_game_8h_a9d0467b58f67c67423d238028e441456}\label{_game_8h_a9d0467b58f67c67423d238028e441456}} 
+typedef struct \hyperlink{struct_c_game}{C\+Game} $\ast$ \hyperlink{_game_8h_a9d0467b58f67c67423d238028e441456}{C\+Game}
+\begin{DoxyCompactList}\small\item\em T\+DA \hyperlink{struct_c_game}{C\+Game}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_c_game}{C\+Game} \hyperlink{_game_8h_a8c64aea7784ccb732340e17378f38db2}{Game\+\_\+\+Load} (\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} p\+Screen\+Utils, int i\+A\+I\+Level)
+\begin{DoxyCompactList}\small\item\em Asigna memoria y retorna el puntero de tipo \hyperlink{struct_c_game}{C\+Game}. \end{DoxyCompactList}\item 
+void \hyperlink{_game_8h_a306ddfea42345806490e2a78a5ca94a9}{Game\+\_\+\+Free} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Libera la memoria asignada por Game\+\_\+\+Load. \end{DoxyCompactList}\item 
+void \hyperlink{_game_8h_aa914e7be51f8d6bde3f3ff80d74a434e}{Game\+\_\+\+Get\+Corner\+Data\+By\+Index} (\hyperlink{struct_c_game}{C\+Game} p\+Game, int i\+Index, float $\ast$fX, float $\ast$fY, float $\ast$f\+Radius)
+\begin{DoxyCompactList}\small\item\em Obtiene la información de un agujero según su índice. \end{DoxyCompactList}\item 
+void \hyperlink{_game_8h_a13da29641cdf90c5377d363404b7db84}{Game\+\_\+\+Add\+Score} (\hyperlink{struct_c_game}{C\+Game} p\+Game, int i\+Type, int i\+Score)
+\begin{DoxyCompactList}\small\item\em Añade puntuación al jugador si es de tipo 0 y a los dos si es de tipo 1. \end{DoxyCompactList}\item 
+void \hyperlink{_game_8h_abf1cc9ba2bb731b5e6d189c4126ce331}{Game\+\_\+\+Draw\+Msg} (\hyperlink{struct_c_game}{C\+Game} p\+Game, char $\ast$sz\+Msg, int r, int g, int b)
+\begin{DoxyCompactList}\small\item\em Dibuja un mensaje con colores r, g, b en medio de la pantalla. \end{DoxyCompactList}\item 
+void \hyperlink{_game_8h_a6c0c1d7cc620e423c878a61baa17a782}{Game\+\_\+\+Draw\+Turn} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Dibuja en pantalla de quién es el turno en el instante de la llamada a esta. \end{DoxyCompactList}\item 
+void \hyperlink{_game_8h_a10524cc3506d652ccb9391891ab061d0}{Game\+\_\+\+Save\+Record} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Guarda el record actual. \end{DoxyCompactList}\item 
+void \hyperlink{_game_8h_a1058c968a8e7e1e29a281a1262c45c0c}{Game\+\_\+\+Game\+Over} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Coloca el estado de perder en 1. \end{DoxyCompactList}\item 
+void \hyperlink{_game_8h_a5e3860b71e02746f214920e57a6b64d0}{Game\+\_\+\+Win\+Game} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Coloca el estado de \char`\"{}ganar\char`\"{} en 1. \end{DoxyCompactList}\item 
+void \hyperlink{_game_8h_afbaa0f44f351e805c2a044ced8bc57ea}{Game\+\_\+\+Start\+Closing} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Empieza a cerrar el tablero para volver al menú principal. \end{DoxyCompactList}\item 
+void \hyperlink{_game_8h_aadda313168b3592b4c1554838e4bfc74}{Game\+\_\+\+Toggle\+Turn} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Cambia de turno. \end{DoxyCompactList}\item 
+void \hyperlink{_game_8h_a8e10c095c31e48a9195fde8bf619a5cb}{Game\+\_\+\+Draw\+Score} (int i\+Score)
+\begin{DoxyCompactList}\small\item\em Dibuja en pantalla la puntuación actual. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_game_8h_ad507325a6d7d6ecee161592693ee83da}\label{_game_8h_ad507325a6d7d6ecee161592693ee83da}} 
+void \hyperlink{_game_8h_ad507325a6d7d6ecee161592693ee83da}{Game\+\_\+\+Draw\+Winner} ()
+\begin{DoxyCompactList}\small\item\em Renderiza el texto de ganador si el usuario ganó. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_game_8h_aa0b1b1789797d7025bab35ac03da9c4a}\label{_game_8h_aa0b1b1789797d7025bab35ac03da9c4a}} 
+void \hyperlink{_game_8h_aa0b1b1789797d7025bab35ac03da9c4a}{Game\+\_\+\+Draw\+Loser} ()
+\begin{DoxyCompactList}\small\item\em Renderiza el texto de perdedor si el usuario perdió. \end{DoxyCompactList}\item 
+void \hyperlink{_game_8h_a93822ea323a667f9b8610001bcdf3d96}{Game\+\_\+\+Render\+Winner} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Averigua quién es el ganador y llama a Game\+\_\+\+Draw\+Winner o Game\+\_\+\+Draw\+Loser dependiendo de quien ganó. \end{DoxyCompactList}\item 
+int \hyperlink{_game_8h_aa7cdcd31f4b71fc425fb52071b6622e2}{Game\+\_\+\+Shoot\+White\+Ball} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Dispara la bola, de la IA o del usuario. \end{DoxyCompactList}\item 
+int \hyperlink{_game_8h_a5cb8241b33961c1c2d3d6b0a1343afad}{Game\+\_\+\+Can\+Shoot} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Obtiene si el usuario puede lanzar. \end{DoxyCompactList}\item 
+int \hyperlink{_game_8h_a84ec0805b372059ad7e35132fc2ddab1}{Game\+\_\+\+Is\+Game\+Over} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Obtiene si el juego se ha perdido (da igual si pierde la IA o el usuario). \end{DoxyCompactList}\item 
+int \hyperlink{_game_8h_af2e1ca424993590290750eafa5095b5b}{Game\+\_\+\+Is\+Closing} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Obtiene si se está cerrando el tablero de juego para ir al menú principal. \end{DoxyCompactList}\item 
+int \hyperlink{_game_8h_aac454d276cc7434d4ac25c597413eb72}{Game\+\_\+\+Get\+Turn} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Obtiene de quién es el turno. \end{DoxyCompactList}\item 
+int \hyperlink{_game_8h_ae96b47b6c2597af997d2242ef38d5bbf}{Game\+\_\+\+Get\+Score} (\hyperlink{struct_c_game}{C\+Game} p\+Game, int i\+Type)
+\begin{DoxyCompactList}\small\item\em Obtiene la puntuación del usuario. \end{DoxyCompactList}\item 
+int \hyperlink{_game_8h_ac88f6324360452a905e91f6916b7c904}{Game\+\_\+\+Render} (\hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Renderiza el tablero y controla la mecánica de juego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Funciones de control de flujo del juego y T\+DA \hyperlink{struct_c_game}{C\+Game}. \}. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_game_8h_a13da29641cdf90c5377d363404b7db84}\label{_game_8h_a13da29641cdf90c5377d363404b7db84}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Add\+Score@{Game\+\_\+\+Add\+Score}}
+\index{Game\+\_\+\+Add\+Score@{Game\+\_\+\+Add\+Score}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Add\+Score()}{Game\_AddScore()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Add\+Score (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game,  }\item[{int}]{i\+Type,  }\item[{int}]{i\+Score }\end{DoxyParamCaption})}
+
+
+
+Añade puntuación al jugador si es de tipo 0 y a los dos si es de tipo 1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+{\em Int} & Tipo de puntuación. 0 = puntuación actual, 1 = puntuación combo. \\
+\hline
+{\em Int} & Cantidad a sumar de puntuación. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_a5cb8241b33961c1c2d3d6b0a1343afad}\label{_game_8h_a5cb8241b33961c1c2d3d6b0a1343afad}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Can\+Shoot@{Game\+\_\+\+Can\+Shoot}}
+\index{Game\+\_\+\+Can\+Shoot@{Game\+\_\+\+Can\+Shoot}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Can\+Shoot()}{Game\_CanShoot()}}
+{\footnotesize\ttfamily int Game\+\_\+\+Can\+Shoot (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Obtiene si el usuario puede lanzar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 1 si puede lanzar, de lo contrario, retorna 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8h_abf1cc9ba2bb731b5e6d189c4126ce331}\label{_game_8h_abf1cc9ba2bb731b5e6d189c4126ce331}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Draw\+Msg@{Game\+\_\+\+Draw\+Msg}}
+\index{Game\+\_\+\+Draw\+Msg@{Game\+\_\+\+Draw\+Msg}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Draw\+Msg()}{Game\_DrawMsg()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Draw\+Msg (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game,  }\item[{char $\ast$}]{sz\+Msg,  }\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+
+
+Dibuja un mensaje con colores r, g, b en medio de la pantalla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+{\em Int} & Cantidad de color rojo del mensaje. \\
+\hline
+{\em Int} & Cantidad de verde rojo del mensaje. \\
+\hline
+{\em Int} & Cantidad de azul rojo del mensaje. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_a8e10c095c31e48a9195fde8bf619a5cb}\label{_game_8h_a8e10c095c31e48a9195fde8bf619a5cb}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Draw\+Score@{Game\+\_\+\+Draw\+Score}}
+\index{Game\+\_\+\+Draw\+Score@{Game\+\_\+\+Draw\+Score}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Draw\+Score()}{Game\_DrawScore()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Draw\+Score (\begin{DoxyParamCaption}\item[{int}]{i\+Score }\end{DoxyParamCaption})}
+
+
+
+Dibuja en pantalla la puntuación actual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Int} & Puntuación a dibujar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_a6c0c1d7cc620e423c878a61baa17a782}\label{_game_8h_a6c0c1d7cc620e423c878a61baa17a782}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Draw\+Turn@{Game\+\_\+\+Draw\+Turn}}
+\index{Game\+\_\+\+Draw\+Turn@{Game\+\_\+\+Draw\+Turn}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Draw\+Turn()}{Game\_DrawTurn()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Draw\+Turn (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Dibuja en pantalla de quién es el turno en el instante de la llamada a esta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_a306ddfea42345806490e2a78a5ca94a9}\label{_game_8h_a306ddfea42345806490e2a78a5ca94a9}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Free@{Game\+\_\+\+Free}}
+\index{Game\+\_\+\+Free@{Game\+\_\+\+Free}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Free()}{Game\_Free()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Free (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Libera la memoria asignada por Game\+\_\+\+Load. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Juego a liberar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_a1058c968a8e7e1e29a281a1262c45c0c}\label{_game_8h_a1058c968a8e7e1e29a281a1262c45c0c}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Game\+Over@{Game\+\_\+\+Game\+Over}}
+\index{Game\+\_\+\+Game\+Over@{Game\+\_\+\+Game\+Over}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Game\+Over()}{Game\_GameOver()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Game\+Over (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Coloca el estado de perder en 1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_aa914e7be51f8d6bde3f3ff80d74a434e}\label{_game_8h_aa914e7be51f8d6bde3f3ff80d74a434e}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Get\+Corner\+Data\+By\+Index@{Game\+\_\+\+Get\+Corner\+Data\+By\+Index}}
+\index{Game\+\_\+\+Get\+Corner\+Data\+By\+Index@{Game\+\_\+\+Get\+Corner\+Data\+By\+Index}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Get\+Corner\+Data\+By\+Index()}{Game\_GetCornerDataByIndex()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Get\+Corner\+Data\+By\+Index (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game,  }\item[{int}]{i\+Index,  }\item[{float $\ast$}]{fX,  }\item[{float $\ast$}]{fY,  }\item[{float $\ast$}]{f\+Radius }\end{DoxyParamCaption})}
+
+
+
+Obtiene la información de un agujero según su índice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+{\em Int} & Índice del agujero. \\
+\hline
+{\em Float$\ast$} & Variable en la que se asignará la coordenada X del agujero. \\
+\hline
+{\em Float$\ast$} & Variable en la que se asignará la coordenada Y del agujero. \\
+\hline
+{\em Float$\ast$} & Variable en la que se asignará el radio del agujero. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_ae96b47b6c2597af997d2242ef38d5bbf}\label{_game_8h_ae96b47b6c2597af997d2242ef38d5bbf}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Get\+Score@{Game\+\_\+\+Get\+Score}}
+\index{Game\+\_\+\+Get\+Score@{Game\+\_\+\+Get\+Score}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Get\+Score()}{Game\_GetScore()}}
+{\footnotesize\ttfamily int Game\+\_\+\+Get\+Score (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game,  }\item[{int}]{i\+Type }\end{DoxyParamCaption})}
+
+
+
+Obtiene la puntuación del usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+{\em Int} & El tipo de puntuación. 0 = puntuación actual, 1 = puntuación combo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna la puntuación del tipo dado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8h_aac454d276cc7434d4ac25c597413eb72}\label{_game_8h_aac454d276cc7434d4ac25c597413eb72}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Get\+Turn@{Game\+\_\+\+Get\+Turn}}
+\index{Game\+\_\+\+Get\+Turn@{Game\+\_\+\+Get\+Turn}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Get\+Turn()}{Game\_GetTurn()}}
+{\footnotesize\ttfamily int Game\+\_\+\+Get\+Turn (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Obtiene de quién es el turno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 1 si el turno es del usuario, de lo contrario, retorna 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8h_af2e1ca424993590290750eafa5095b5b}\label{_game_8h_af2e1ca424993590290750eafa5095b5b}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Is\+Closing@{Game\+\_\+\+Is\+Closing}}
+\index{Game\+\_\+\+Is\+Closing@{Game\+\_\+\+Is\+Closing}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Is\+Closing()}{Game\_IsClosing()}}
+{\footnotesize\ttfamily int Game\+\_\+\+Is\+Closing (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Obtiene si se está cerrando el tablero de juego para ir al menú principal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 1 si se está cerrando, de lo contrario, retorna 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8h_a84ec0805b372059ad7e35132fc2ddab1}\label{_game_8h_a84ec0805b372059ad7e35132fc2ddab1}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Is\+Game\+Over@{Game\+\_\+\+Is\+Game\+Over}}
+\index{Game\+\_\+\+Is\+Game\+Over@{Game\+\_\+\+Is\+Game\+Over}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Is\+Game\+Over()}{Game\_IsGameOver()}}
+{\footnotesize\ttfamily int Game\+\_\+\+Is\+Game\+Over (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Obtiene si el juego se ha perdido (da igual si pierde la IA o el usuario). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 1 si se ha perdido el juego, de lo contrario, retorna 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8h_a8c64aea7784ccb732340e17378f38db2}\label{_game_8h_a8c64aea7784ccb732340e17378f38db2}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Load@{Game\+\_\+\+Load}}
+\index{Game\+\_\+\+Load@{Game\+\_\+\+Load}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Load()}{Game\_Load()}}
+{\footnotesize\ttfamily \hyperlink{struct_c_game}{C\+Game} Game\+\_\+\+Load (\begin{DoxyParamCaption}\item[{\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen}}]{p\+Screen\+Utils,  }\item[{int}]{i\+A\+I\+Level }\end{DoxyParamCaption})}
+
+
+
+Asigna memoria y retorna el puntero de tipo \hyperlink{struct_c_game}{C\+Game}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de útiles de pantalla. \\
+\hline
+{\em Int} & Nivel de dificultad de la IA. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna un puntero a la dirección de memoria asignada por esta. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8h_ac88f6324360452a905e91f6916b7c904}\label{_game_8h_ac88f6324360452a905e91f6916b7c904}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Render@{Game\+\_\+\+Render}}
+\index{Game\+\_\+\+Render@{Game\+\_\+\+Render}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Render()}{Game\_Render()}}
+{\footnotesize\ttfamily int Game\+\_\+\+Render (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Renderiza el tablero y controla la mecánica de juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 1 si va se va a salir al menú principal, de lo contrario, retorna 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8h_a93822ea323a667f9b8610001bcdf3d96}\label{_game_8h_a93822ea323a667f9b8610001bcdf3d96}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Render\+Winner@{Game\+\_\+\+Render\+Winner}}
+\index{Game\+\_\+\+Render\+Winner@{Game\+\_\+\+Render\+Winner}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Render\+Winner()}{Game\_RenderWinner()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Render\+Winner (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Averigua quién es el ganador y llama a Game\+\_\+\+Draw\+Winner o Game\+\_\+\+Draw\+Loser dependiendo de quien ganó. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_a10524cc3506d652ccb9391891ab061d0}\label{_game_8h_a10524cc3506d652ccb9391891ab061d0}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Save\+Record@{Game\+\_\+\+Save\+Record}}
+\index{Game\+\_\+\+Save\+Record@{Game\+\_\+\+Save\+Record}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Save\+Record()}{Game\_SaveRecord()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Save\+Record (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Guarda el record actual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_aa7cdcd31f4b71fc425fb52071b6622e2}\label{_game_8h_aa7cdcd31f4b71fc425fb52071b6622e2}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Shoot\+White\+Ball@{Game\+\_\+\+Shoot\+White\+Ball}}
+\index{Game\+\_\+\+Shoot\+White\+Ball@{Game\+\_\+\+Shoot\+White\+Ball}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Shoot\+White\+Ball()}{Game\_ShootWhiteBall()}}
+{\footnotesize\ttfamily int Game\+\_\+\+Shoot\+White\+Ball (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Dispara la bola, de la IA o del usuario. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna 1 si la IA o el usuario han lanzado, de lo contrario, retorna 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_game_8h_afbaa0f44f351e805c2a044ced8bc57ea}\label{_game_8h_afbaa0f44f351e805c2a044ced8bc57ea}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Start\+Closing@{Game\+\_\+\+Start\+Closing}}
+\index{Game\+\_\+\+Start\+Closing@{Game\+\_\+\+Start\+Closing}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Start\+Closing()}{Game\_StartClosing()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Start\+Closing (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Empieza a cerrar el tablero para volver al menú principal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_aadda313168b3592b4c1554838e4bfc74}\label{_game_8h_aadda313168b3592b4c1554838e4bfc74}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Toggle\+Turn@{Game\+\_\+\+Toggle\+Turn}}
+\index{Game\+\_\+\+Toggle\+Turn@{Game\+\_\+\+Toggle\+Turn}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Toggle\+Turn()}{Game\_ToggleTurn()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Toggle\+Turn (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Cambia de turno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_game_8h_a5e3860b71e02746f214920e57a6b64d0}\label{_game_8h_a5e3860b71e02746f214920e57a6b64d0}} 
+\index{Game.\+h@{Game.\+h}!Game\+\_\+\+Win\+Game@{Game\+\_\+\+Win\+Game}}
+\index{Game\+\_\+\+Win\+Game@{Game\+\_\+\+Win\+Game}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{Game\+\_\+\+Win\+Game()}{Game\_WinGame()}}
+{\footnotesize\ttfamily void Game\+\_\+\+Win\+Game (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Coloca el estado de \char`\"{}ganar\char`\"{} en 1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}

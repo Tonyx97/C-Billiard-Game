@@ -1,0 +1,364 @@
+\hypertarget{_ball_8h}{}\section{Ball.\+h File Reference}
+\label{_ball_8h}\index{Ball.\+h@{Ball.\+h}}
+
+
+Funciones y datos de una bola. \}.  
+
+
+{\ttfamily \#include \char`\"{}Pantalla.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game.\+h\char`\"{}}\newline
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_ball_8h_a3f9a15e160b60f82ccbc7ab37449fbff}\label{_ball_8h_a3f9a15e160b60f82ccbc7ab37449fbff}} 
+typedef struct \hyperlink{struct_c_ball}{C\+Ball} $\ast$ \hyperlink{_ball_8h_a3f9a15e160b60f82ccbc7ab37449fbff}{C\+Ball}
+\begin{DoxyCompactList}\small\item\em T\+DA \hyperlink{struct_c_ball}{C\+Ball}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_c_ball}{C\+Ball} \hyperlink{_ball_8h_a79b52d178a3c9c10d38018f445885a35}{Ball\+\_\+\+Load} (int i\+Ball\+Type)
+\begin{DoxyCompactList}\small\item\em Asigna memoria y retorna el puntero de tipo \hyperlink{struct_c_ball}{C\+Ball}. \end{DoxyCompactList}\item 
+\hyperlink{struct_imagen}{Imagen} \hyperlink{_ball_8h_a6d7b61b0231c1c30fde744b621bc40b7}{Ball\+\_\+\+Get\+Image} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball)
+\begin{DoxyCompactList}\small\item\em Obtiene la imagen de una bola específica. \end{DoxyCompactList}\item 
+void \hyperlink{_ball_8h_a1a7c2de21a25f61ce9229e060cada4cc}{Ball\+\_\+\+Get\+XY} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball, float $\ast$fX, float $\ast$fY)
+\begin{DoxyCompactList}\small\item\em Obtiene la coordenada X e Y de una bola. \end{DoxyCompactList}\item 
+void \hyperlink{_ball_8h_ae5d130a82f209efbb8afbfe3128c4af2}{Ball\+\_\+\+Set\+XY} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball, float fX, float fY)
+\begin{DoxyCompactList}\small\item\em Coloca la coordenada X e Y dadas a una bola. \end{DoxyCompactList}\item 
+void \hyperlink{_ball_8h_a12405f12bddc7538ae81ce4784c18ac6}{Ball\+\_\+\+Get\+V\+XY} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball, float $\ast$f\+VX, float $\ast$f\+VY)
+\begin{DoxyCompactList}\small\item\em Obtiene la velocidad X e Y de una bola. \end{DoxyCompactList}\item 
+void \hyperlink{_ball_8h_a66805a46c70c9f846d268b111f296312}{Ball\+\_\+\+Set\+V\+XY} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball, float f\+VX, float f\+VY)
+\begin{DoxyCompactList}\small\item\em Coloca la velocidad X e Y dadas a una bola. \end{DoxyCompactList}\item 
+void \hyperlink{_ball_8h_ae95d1917c69b1c87e97ff659dccd9561}{Ball\+\_\+\+Get\+WH} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball, float $\ast$fW, float $\ast$fH)
+\begin{DoxyCompactList}\small\item\em Obtiene la an anchura y altura de una bola. \end{DoxyCompactList}\item 
+void \hyperlink{_ball_8h_ac9bfeff18256a613058564cbfd8d29a0}{Ball\+\_\+\+Set\+WH} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball, float fW, float fH)
+\begin{DoxyCompactList}\small\item\em Coloca la anchura y altura dadas a una bola. \end{DoxyCompactList}\item 
+void \hyperlink{_ball_8h_a3b27ff8353d3adcd42057861971e7022}{Ball\+\_\+\+Get\+Center} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball, float $\ast$fX, float $\ast$fY)
+\begin{DoxyCompactList}\small\item\em Obtiene la coordenada X e Y del centro de una bola. \end{DoxyCompactList}\item 
+void \hyperlink{_ball_8h_a330050d70ccf50f2d9cd3c9a731b99ed}{Ball\+\_\+\+Set\+Destroying} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball, int i\+Destroyed)
+\begin{DoxyCompactList}\small\item\em Le dice a la bola si se esta destruyendo o no. \end{DoxyCompactList}\item 
+void \hyperlink{_ball_8h_a7037d807890fb3360ed36a2e58a02cfd}{Ball\+\_\+\+Reset\+WH} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball)
+\begin{DoxyCompactList}\small\item\em Restaura los valores de anchura y altura por defecto de una bola. \end{DoxyCompactList}\item 
+void \hyperlink{_ball_8h_ada56041b3824cd4c55f5b2b9b8166816}{Ball\+\_\+\+Set\+Collision\+State} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball, int i\+State)
+\begin{DoxyCompactList}\small\item\em Coloca el estado de colisión a una bola. \end{DoxyCompactList}\item 
+void \hyperlink{_ball_8h_a637a4184b9a8be6046f4d7e22940b256}{Ball\+\_\+\+Free} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball)
+\begin{DoxyCompactList}\small\item\em Libera la memoria asignada por Ball\+\_\+\+Load. \end{DoxyCompactList}\item 
+int \hyperlink{_ball_8h_ae6b4d524807b35d800e7654ee4c65fcf}{Ball\+\_\+\+Get\+Type} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball)
+\begin{DoxyCompactList}\small\item\em Obtiene el tipo de la bola dada. \end{DoxyCompactList}\item 
+int \hyperlink{_ball_8h_ab67594fbc5d1322d02f2bb8daa5ce54c}{Ball\+\_\+\+Is\+Destroying} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball)
+\begin{DoxyCompactList}\small\item\em Obtiene el estado de destrucción de la bola dada. \end{DoxyCompactList}\item 
+int \hyperlink{_ball_8h_ab5b321a360e25209d1946a856c567142}{Ball\+\_\+\+Is\+Collided} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball)
+\begin{DoxyCompactList}\small\item\em Obtiene si la bola ha colisionado o no. \end{DoxyCompactList}\item 
+int \hyperlink{_ball_8h_a6874e47eeb007ef35441463b0811d0d8}{Ball\+\_\+\+Check\+Bounds} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball, \hyperlink{struct_c_game}{C\+Game} p\+Game)
+\begin{DoxyCompactList}\small\item\em Obtiene si la bola ha colisionado o no. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Funciones y datos de una bola. \}. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_ball_8h_a6874e47eeb007ef35441463b0811d0d8}\label{_ball_8h_a6874e47eeb007ef35441463b0811d0d8}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Check\+Bounds@{Ball\+\_\+\+Check\+Bounds}}
+\index{Ball\+\_\+\+Check\+Bounds@{Ball\+\_\+\+Check\+Bounds}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Check\+Bounds()}{Ball\_CheckBounds()}}
+{\footnotesize\ttfamily int Ball\+\_\+\+Check\+Bounds (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball,  }\item[{\hyperlink{struct_c_game}{C\+Game}}]{p\+Game }\end{DoxyParamCaption})}
+
+
+
+Obtiene si la bola ha colisionado o no. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere revisar los límites en el tablero. \\
+\hline
+{\em Pointer} & Estructura creada de juego. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna si hay colisionado o no con los límites. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ball_8h_a637a4184b9a8be6046f4d7e22940b256}\label{_ball_8h_a637a4184b9a8be6046f4d7e22940b256}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Free@{Ball\+\_\+\+Free}}
+\index{Ball\+\_\+\+Free@{Ball\+\_\+\+Free}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Free()}{Ball\_Free()}}
+{\footnotesize\ttfamily void Ball\+\_\+\+Free (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball }\end{DoxyParamCaption})}
+
+
+
+Libera la memoria asignada por Ball\+\_\+\+Load. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Bola a liberar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ball_8h_a3b27ff8353d3adcd42057861971e7022}\label{_ball_8h_a3b27ff8353d3adcd42057861971e7022}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Get\+Center@{Ball\+\_\+\+Get\+Center}}
+\index{Ball\+\_\+\+Get\+Center@{Ball\+\_\+\+Get\+Center}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Get\+Center()}{Ball\_GetCenter()}}
+{\footnotesize\ttfamily void Ball\+\_\+\+Get\+Center (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball,  }\item[{float $\ast$}]{fX,  }\item[{float $\ast$}]{fY }\end{DoxyParamCaption})}
+
+
+
+Obtiene la coordenada X e Y del centro de una bola. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere sacar los valores. \\
+\hline
+{\em Float$\ast$} & Variable en la que se asignara el centro X de la bola. \\
+\hline
+{\em Float$\ast$} & Variable en la que se asignara el centro Y de la bola. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ball_8h_a6d7b61b0231c1c30fde744b621bc40b7}\label{_ball_8h_a6d7b61b0231c1c30fde744b621bc40b7}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Get\+Image@{Ball\+\_\+\+Get\+Image}}
+\index{Ball\+\_\+\+Get\+Image@{Ball\+\_\+\+Get\+Image}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Get\+Image()}{Ball\_GetImage()}}
+{\footnotesize\ttfamily \hyperlink{struct_imagen}{Imagen} Ball\+\_\+\+Get\+Image (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball }\end{DoxyParamCaption})}
+
+
+
+Obtiene la imagen de una bola específica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere sacar la imagen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna la imagen de la bola dada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ball_8h_ae6b4d524807b35d800e7654ee4c65fcf}\label{_ball_8h_ae6b4d524807b35d800e7654ee4c65fcf}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Get\+Type@{Ball\+\_\+\+Get\+Type}}
+\index{Ball\+\_\+\+Get\+Type@{Ball\+\_\+\+Get\+Type}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Get\+Type()}{Ball\_GetType()}}
+{\footnotesize\ttfamily int Ball\+\_\+\+Get\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball }\end{DoxyParamCaption})}
+
+
+
+Obtiene el tipo de la bola dada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere sacar el tipo. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ball_8h_a12405f12bddc7538ae81ce4784c18ac6}\label{_ball_8h_a12405f12bddc7538ae81ce4784c18ac6}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Get\+V\+XY@{Ball\+\_\+\+Get\+V\+XY}}
+\index{Ball\+\_\+\+Get\+V\+XY@{Ball\+\_\+\+Get\+V\+XY}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Get\+V\+X\+Y()}{Ball\_GetVXY()}}
+{\footnotesize\ttfamily void Ball\+\_\+\+Get\+V\+XY (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball,  }\item[{float $\ast$}]{f\+VX,  }\item[{float $\ast$}]{f\+VY }\end{DoxyParamCaption})}
+
+
+
+Obtiene la velocidad X e Y de una bola. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere sacar los valores. \\
+\hline
+{\em Float$\ast$} & Variable en la que se asignara la velocidad X de la bola. \\
+\hline
+{\em Float$\ast$} & Variable en la que se asignara la velocidad Y de la bola. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ball_8h_ae95d1917c69b1c87e97ff659dccd9561}\label{_ball_8h_ae95d1917c69b1c87e97ff659dccd9561}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Get\+WH@{Ball\+\_\+\+Get\+WH}}
+\index{Ball\+\_\+\+Get\+WH@{Ball\+\_\+\+Get\+WH}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Get\+W\+H()}{Ball\_GetWH()}}
+{\footnotesize\ttfamily void Ball\+\_\+\+Get\+WH (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball,  }\item[{float $\ast$}]{fW,  }\item[{float $\ast$}]{fH }\end{DoxyParamCaption})}
+
+
+
+Obtiene la an anchura y altura de una bola. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere sacar los valores. \\
+\hline
+{\em Float$\ast$} & Variable en la que se asignara la anchura de la bola. \\
+\hline
+{\em Float$\ast$} & Variable en la que se asignara la altura de la bola. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ball_8h_a1a7c2de21a25f61ce9229e060cada4cc}\label{_ball_8h_a1a7c2de21a25f61ce9229e060cada4cc}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Get\+XY@{Ball\+\_\+\+Get\+XY}}
+\index{Ball\+\_\+\+Get\+XY@{Ball\+\_\+\+Get\+XY}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Get\+X\+Y()}{Ball\_GetXY()}}
+{\footnotesize\ttfamily void Ball\+\_\+\+Get\+XY (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball,  }\item[{float $\ast$}]{fX,  }\item[{float $\ast$}]{fY }\end{DoxyParamCaption})}
+
+
+
+Obtiene la coordenada X e Y de una bola. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere sacar los valores. \\
+\hline
+{\em Float$\ast$} & Variable en la que se asignara la coordenada X de la bola. \\
+\hline
+{\em Float$\ast$} & Variable en la que se asignara la coordenada Y de la bola. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ball_8h_ab5b321a360e25209d1946a856c567142}\label{_ball_8h_ab5b321a360e25209d1946a856c567142}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Is\+Collided@{Ball\+\_\+\+Is\+Collided}}
+\index{Ball\+\_\+\+Is\+Collided@{Ball\+\_\+\+Is\+Collided}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Is\+Collided()}{Ball\_IsCollided()}}
+{\footnotesize\ttfamily int Ball\+\_\+\+Is\+Collided (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball }\end{DoxyParamCaption})}
+
+
+
+Obtiene si la bola ha colisionado o no. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere sacar el estado de destrucción. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna si hay colisionado o no. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ball_8h_ab67594fbc5d1322d02f2bb8daa5ce54c}\label{_ball_8h_ab67594fbc5d1322d02f2bb8daa5ce54c}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Is\+Destroying@{Ball\+\_\+\+Is\+Destroying}}
+\index{Ball\+\_\+\+Is\+Destroying@{Ball\+\_\+\+Is\+Destroying}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Is\+Destroying()}{Ball\_IsDestroying()}}
+{\footnotesize\ttfamily int Ball\+\_\+\+Is\+Destroying (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball }\end{DoxyParamCaption})}
+
+
+
+Obtiene el estado de destrucción de la bola dada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere sacar el estado de destrucción. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna el estado de destrucción. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ball_8h_a79b52d178a3c9c10d38018f445885a35}\label{_ball_8h_a79b52d178a3c9c10d38018f445885a35}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Load@{Ball\+\_\+\+Load}}
+\index{Ball\+\_\+\+Load@{Ball\+\_\+\+Load}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Load()}{Ball\_Load()}}
+{\footnotesize\ttfamily \hyperlink{struct_c_ball}{C\+Ball} Ball\+\_\+\+Load (\begin{DoxyParamCaption}\item[{int}]{i\+Ball\+Type }\end{DoxyParamCaption})}
+
+
+
+Asigna memoria y retorna el puntero de tipo \hyperlink{struct_c_ball}{C\+Ball}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Int} & Tipo / Número de bola a cargar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna un puntero a la dirección de memoria asignada por esta. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ball_8h_a7037d807890fb3360ed36a2e58a02cfd}\label{_ball_8h_a7037d807890fb3360ed36a2e58a02cfd}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Reset\+WH@{Ball\+\_\+\+Reset\+WH}}
+\index{Ball\+\_\+\+Reset\+WH@{Ball\+\_\+\+Reset\+WH}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Reset\+W\+H()}{Ball\_ResetWH()}}
+{\footnotesize\ttfamily void Ball\+\_\+\+Reset\+WH (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball }\end{DoxyParamCaption})}
+
+
+
+Restaura los valores de anchura y altura por defecto de una bola. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere restaurar los valores. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ball_8h_ada56041b3824cd4c55f5b2b9b8166816}\label{_ball_8h_ada56041b3824cd4c55f5b2b9b8166816}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Set\+Collision\+State@{Ball\+\_\+\+Set\+Collision\+State}}
+\index{Ball\+\_\+\+Set\+Collision\+State@{Ball\+\_\+\+Set\+Collision\+State}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Set\+Collision\+State()}{Ball\_SetCollisionState()}}
+{\footnotesize\ttfamily void Ball\+\_\+\+Set\+Collision\+State (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball,  }\item[{int}]{i\+State }\end{DoxyParamCaption})}
+
+
+
+Coloca el estado de colisión a una bola. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere colocar el estado. \\
+\hline
+{\em Int} & Estado de colision\+: 0 = no hay colisión, 1 = si hay colisión. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ball_8h_a330050d70ccf50f2d9cd3c9a731b99ed}\label{_ball_8h_a330050d70ccf50f2d9cd3c9a731b99ed}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Set\+Destroying@{Ball\+\_\+\+Set\+Destroying}}
+\index{Ball\+\_\+\+Set\+Destroying@{Ball\+\_\+\+Set\+Destroying}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Set\+Destroying()}{Ball\_SetDestroying()}}
+{\footnotesize\ttfamily void Ball\+\_\+\+Set\+Destroying (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball,  }\item[{int}]{i\+Destroyed }\end{DoxyParamCaption})}
+
+
+
+Le dice a la bola si se esta destruyendo o no. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere cambiar el estado. \\
+\hline
+{\em Int$\ast$} & Estado de destrucción\+: 0 = no se esta destruyendo, 1 = destrucción temporal (para bola blanca), 2 = destruyendo totalmente (para las demás bolas) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ball_8h_a66805a46c70c9f846d268b111f296312}\label{_ball_8h_a66805a46c70c9f846d268b111f296312}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Set\+V\+XY@{Ball\+\_\+\+Set\+V\+XY}}
+\index{Ball\+\_\+\+Set\+V\+XY@{Ball\+\_\+\+Set\+V\+XY}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Set\+V\+X\+Y()}{Ball\_SetVXY()}}
+{\footnotesize\ttfamily void Ball\+\_\+\+Set\+V\+XY (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball,  }\item[{float}]{f\+VX,  }\item[{float}]{f\+VY }\end{DoxyParamCaption})}
+
+
+
+Coloca la velocidad X e Y dadas a una bola. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere colocar los valores. \\
+\hline
+{\em Float} & Velocidad X que se le aplicará a la bola. \\
+\hline
+{\em Float} & Velocidad Y que se le aplicará a la bola. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ball_8h_ac9bfeff18256a613058564cbfd8d29a0}\label{_ball_8h_ac9bfeff18256a613058564cbfd8d29a0}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Set\+WH@{Ball\+\_\+\+Set\+WH}}
+\index{Ball\+\_\+\+Set\+WH@{Ball\+\_\+\+Set\+WH}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Set\+W\+H()}{Ball\_SetWH()}}
+{\footnotesize\ttfamily void Ball\+\_\+\+Set\+WH (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball,  }\item[{float}]{fW,  }\item[{float}]{fH }\end{DoxyParamCaption})}
+
+
+
+Coloca la anchura y altura dadas a una bola. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere colocar los valores. \\
+\hline
+{\em Float} & Anchura que se le asignara a la bola. \\
+\hline
+{\em Float} & Altura que se le asignara a la bola. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_ball_8h_ae5d130a82f209efbb8afbfe3128c4af2}\label{_ball_8h_ae5d130a82f209efbb8afbfe3128c4af2}} 
+\index{Ball.\+h@{Ball.\+h}!Ball\+\_\+\+Set\+XY@{Ball\+\_\+\+Set\+XY}}
+\index{Ball\+\_\+\+Set\+XY@{Ball\+\_\+\+Set\+XY}!Ball.\+h@{Ball.\+h}}
+\subsubsection{\texorpdfstring{Ball\+\_\+\+Set\+X\+Y()}{Ball\_SetXY()}}
+{\footnotesize\ttfamily void Ball\+\_\+\+Set\+XY (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball,  }\item[{float}]{fX,  }\item[{float}]{fY }\end{DoxyParamCaption})}
+
+
+
+Coloca la coordenada X e Y dadas a una bola. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola de la que se quiere colocar los valores. \\
+\hline
+{\em Float} & Coordenada X en donde se colocará la bola. \\
+\hline
+{\em Float} & Coordenada Y en donde se colocará la bola. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,85 @@
+\hypertarget{_bot_8h}{}\section{Bot.\+h File Reference}
+\label{_bot_8h}\index{Bot.\+h@{Bot.\+h}}
+
+
+Inteligencia Artificial simple para controlar el bot enemigo. \}.  
+
+
+{\ttfamily \#include \char`\"{}Ball.\+h\char`\"{}}\newline
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_bot_8h_a73ec1c97f81d93adf415b892da54a398}\label{_bot_8h_a73ec1c97f81d93adf415b892da54a398}} 
+typedef struct \hyperlink{struct_c_bot}{C\+Bot} $\ast$ \hyperlink{_bot_8h_a73ec1c97f81d93adf415b892da54a398}{C\+Bot}
+\begin{DoxyCompactList}\small\item\em T\+DA \hyperlink{struct_c_bot}{C\+Bot}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_c_bot}{C\+Bot} \hyperlink{_bot_8h_a1ef5ca44f870a4f6916d807f9d2581e5}{Bot\+\_\+\+Load} (int i\+Level)
+\begin{DoxyCompactList}\small\item\em Asigna memoria y retorna el puntero de tipo \hyperlink{struct_c_bot}{C\+Bot}. \end{DoxyCompactList}\item 
+void \hyperlink{_bot_8h_a9c06ca94d4b3c2fa3879b68029273245}{Bot\+\_\+\+Free} (\hyperlink{struct_c_bot}{C\+Bot} p\+Bot)
+\begin{DoxyCompactList}\small\item\em Libera la memoria asignada por Bot\+\_\+\+Load. \end{DoxyCompactList}\item 
+void \hyperlink{_bot_8h_a8a9a6c9eeaecc7efd4b10d14797cb3b4}{Bot\+\_\+\+Launch} (\hyperlink{struct_c_ball}{C\+Ball} p\+Ball, \hyperlink{struct_c_bot}{C\+Bot} p\+Bot, float f\+DirX, float f\+DirY)
+\begin{DoxyCompactList}\small\item\em Hace lanzar el bot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Inteligencia Artificial simple para controlar el bot enemigo. \}. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_bot_8h_a9c06ca94d4b3c2fa3879b68029273245}\label{_bot_8h_a9c06ca94d4b3c2fa3879b68029273245}} 
+\index{Bot.\+h@{Bot.\+h}!Bot\+\_\+\+Free@{Bot\+\_\+\+Free}}
+\index{Bot\+\_\+\+Free@{Bot\+\_\+\+Free}!Bot.\+h@{Bot.\+h}}
+\subsubsection{\texorpdfstring{Bot\+\_\+\+Free()}{Bot\_Free()}}
+{\footnotesize\ttfamily void Bot\+\_\+\+Free (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_bot}{C\+Bot}}]{p\+Bot }\end{DoxyParamCaption})}
+
+
+
+Libera la memoria asignada por Bot\+\_\+\+Load. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Bot a liberar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_bot_8h_a8a9a6c9eeaecc7efd4b10d14797cb3b4}\label{_bot_8h_a8a9a6c9eeaecc7efd4b10d14797cb3b4}} 
+\index{Bot.\+h@{Bot.\+h}!Bot\+\_\+\+Launch@{Bot\+\_\+\+Launch}}
+\index{Bot\+\_\+\+Launch@{Bot\+\_\+\+Launch}!Bot.\+h@{Bot.\+h}}
+\subsubsection{\texorpdfstring{Bot\+\_\+\+Launch()}{Bot\_Launch()}}
+{\footnotesize\ttfamily void Bot\+\_\+\+Launch (\begin{DoxyParamCaption}\item[{\hyperlink{struct_c_ball}{C\+Ball}}]{p\+Ball,  }\item[{\hyperlink{struct_c_bot}{C\+Bot}}]{p\+Bot,  }\item[{float}]{f\+DirX,  }\item[{float}]{f\+DirY }\end{DoxyParamCaption})}
+
+
+
+Hace lanzar el bot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{struct_c_ball}{C\+Ball}} & Bola a la que golpear. \\
+\hline
+{\em \hyperlink{struct_c_bot}{C\+Bot}} & Estructura creada de records. \\
+\hline
+{\em Float} & Dirección X a ser lanzada la bola. \\
+\hline
+{\em Float} & Dirección Y a ser lanzada la bola. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_bot_8h_a1ef5ca44f870a4f6916d807f9d2581e5}\label{_bot_8h_a1ef5ca44f870a4f6916d807f9d2581e5}} 
+\index{Bot.\+h@{Bot.\+h}!Bot\+\_\+\+Load@{Bot\+\_\+\+Load}}
+\index{Bot\+\_\+\+Load@{Bot\+\_\+\+Load}!Bot.\+h@{Bot.\+h}}
+\subsubsection{\texorpdfstring{Bot\+\_\+\+Load()}{Bot\_Load()}}
+{\footnotesize\ttfamily \hyperlink{struct_c_bot}{C\+Bot} Bot\+\_\+\+Load (\begin{DoxyParamCaption}\item[{int}]{i\+Level }\end{DoxyParamCaption})}
+
+
+
+Asigna memoria y retorna el puntero de tipo \hyperlink{struct_c_bot}{C\+Bot}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Int} & Nivel de dificultad de la IA. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna un puntero a la dirección de memoria asignada por esta. 
+\end{DoxyReturn}

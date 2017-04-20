@@ -1,0 +1,204 @@
+\hypertarget{_screen_utils_8h}{}\section{Screen\+Utils.\+h File Reference}
+\label{_screen_utils_8h}\index{Screen\+Utils.\+h@{Screen\+Utils.\+h}}
+
+
+Utilizado para calcular posiciones relativas de pantalla, cambiar el tamaño de la pantalla, F\+PS etc. T\+DA simple. \}.  
+
+
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}\label{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}} 
+typedef struct \hyperlink{struct_c_screen_utils}{C\+Screen\+Utils} $\ast$ \hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen}
+\begin{DoxyCompactList}\small\item\em T\+DA C\+Screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} \hyperlink{_screen_utils_8h_aab2cad5c7a877842d4b908567427a541}{Screen\+\_\+\+Load} ()
+\begin{DoxyCompactList}\small\item\em Asigna memoria y retorna un puntero de tipo C\+Screen. \end{DoxyCompactList}\item 
+void \hyperlink{_screen_utils_8h_ae52dccbfc11642fe3a4c2aa0227a3275}{Screen\+\_\+\+Resize\+Window} (int f\+SX, int f\+SY)
+\begin{DoxyCompactList}\small\item\em Cambia el tamaño de la pantalla. \end{DoxyCompactList}\item 
+void \hyperlink{_screen_utils_8h_a27252f12da1d054818de21161e5d6467}{Screen\+\_\+\+Set\+Max\+F\+PS} (\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} p\+Screen, int i\+Max\+F\+PS)
+\begin{DoxyCompactList}\small\item\em Cambia el máximo de frames por segundo. \end{DoxyCompactList}\item 
+void \hyperlink{_screen_utils_8h_ad67c312e9a594c403d7cf93091aeab3e}{Screen\+\_\+\+Free} (\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} p\+Screen)
+\begin{DoxyCompactList}\small\item\em Libera la memoria asignada por Screen\+\_\+\+Load. \end{DoxyCompactList}\item 
+int \hyperlink{_screen_utils_8h_a26da14b923a0354e25a5395bef3bd260}{Screen\+\_\+\+Get\+Max\+F\+PS} (\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} p\+Screen)
+\begin{DoxyCompactList}\small\item\em Retorna el máximo de frames por segundo actual. \end{DoxyCompactList}\item 
+float \hyperlink{_screen_utils_8h_aae487cd11e99d60824f341a106c99b89}{Screen\+\_\+\+Sync} (\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} p\+Screen, float f\+Val)
+\begin{DoxyCompactList}\small\item\em Calcula el valor sincronizado para todos los monitores. \end{DoxyCompactList}\item 
+double \hyperlink{_screen_utils_8h_af16bb8fd5aab12f320bfd47b57abb82c}{Screen\+\_\+\+Get\+SX} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la anchura de la pantalla. \end{DoxyCompactList}\item 
+double \hyperlink{_screen_utils_8h_a3d60d7850d49d93523126b048b2e1b4b}{Screen\+\_\+\+Get\+SY} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la altura de la pantalla. \end{DoxyCompactList}\item 
+double \hyperlink{_screen_utils_8h_a9f6d1b9e4e132706ca3387acaea78e6f}{Screen\+\_\+\+ConvertX} (double fX)
+\begin{DoxyCompactList}\small\item\em Calcula la coordenada X real de la coordenada dada entre 0 y 1 (relativa) \end{DoxyCompactList}\item 
+double \hyperlink{_screen_utils_8h_a6db610ebde982eabdad0ebab67935bf5}{Screen\+\_\+\+ConvertY} (double fY)
+\begin{DoxyCompactList}\small\item\em Calcula la coordenada Y real de la coordenada dada entre 0 -\/ 1 (relativa) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilizado para calcular posiciones relativas de pantalla, cambiar el tamaño de la pantalla, F\+PS etc. T\+DA simple. \}. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_screen_utils_8h_a9f6d1b9e4e132706ca3387acaea78e6f}\label{_screen_utils_8h_a9f6d1b9e4e132706ca3387acaea78e6f}} 
+\index{Screen\+Utils.\+h@{Screen\+Utils.\+h}!Screen\+\_\+\+ConvertX@{Screen\+\_\+\+ConvertX}}
+\index{Screen\+\_\+\+ConvertX@{Screen\+\_\+\+ConvertX}!Screen\+Utils.\+h@{Screen\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Screen\+\_\+\+Convert\+X()}{Screen\_ConvertX()}}
+{\footnotesize\ttfamily double Screen\+\_\+\+ConvertX (\begin{DoxyParamCaption}\item[{double}]{fX }\end{DoxyParamCaption})}
+
+
+
+Calcula la coordenada X real de la coordenada dada entre 0 y 1 (relativa) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Float} & Valor relativo X entre 0 y 1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna el valor en double de la coordenada real X en pantalla. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_screen_utils_8h_a6db610ebde982eabdad0ebab67935bf5}\label{_screen_utils_8h_a6db610ebde982eabdad0ebab67935bf5}} 
+\index{Screen\+Utils.\+h@{Screen\+Utils.\+h}!Screen\+\_\+\+ConvertY@{Screen\+\_\+\+ConvertY}}
+\index{Screen\+\_\+\+ConvertY@{Screen\+\_\+\+ConvertY}!Screen\+Utils.\+h@{Screen\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Screen\+\_\+\+Convert\+Y()}{Screen\_ConvertY()}}
+{\footnotesize\ttfamily double Screen\+\_\+\+ConvertY (\begin{DoxyParamCaption}\item[{double}]{fY }\end{DoxyParamCaption})}
+
+
+
+Calcula la coordenada Y real de la coordenada dada entre 0 -\/ 1 (relativa) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Float} & Valor relativo Y entre 0 y 1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna el valor en double de la coordenada real Y en pantalla. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_screen_utils_8h_ad67c312e9a594c403d7cf93091aeab3e}\label{_screen_utils_8h_ad67c312e9a594c403d7cf93091aeab3e}} 
+\index{Screen\+Utils.\+h@{Screen\+Utils.\+h}!Screen\+\_\+\+Free@{Screen\+\_\+\+Free}}
+\index{Screen\+\_\+\+Free@{Screen\+\_\+\+Free}!Screen\+Utils.\+h@{Screen\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Screen\+\_\+\+Free()}{Screen\_Free()}}
+{\footnotesize\ttfamily void Screen\+\_\+\+Free (\begin{DoxyParamCaption}\item[{\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen}}]{p\+Screen }\end{DoxyParamCaption})}
+
+
+
+Libera la memoria asignada por Screen\+\_\+\+Load. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Útiles de pantalla a liberar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_screen_utils_8h_a26da14b923a0354e25a5395bef3bd260}\label{_screen_utils_8h_a26da14b923a0354e25a5395bef3bd260}} 
+\index{Screen\+Utils.\+h@{Screen\+Utils.\+h}!Screen\+\_\+\+Get\+Max\+F\+PS@{Screen\+\_\+\+Get\+Max\+F\+PS}}
+\index{Screen\+\_\+\+Get\+Max\+F\+PS@{Screen\+\_\+\+Get\+Max\+F\+PS}!Screen\+Utils.\+h@{Screen\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Screen\+\_\+\+Get\+Max\+F\+P\+S()}{Screen\_GetMaxFPS()}}
+{\footnotesize\ttfamily int Screen\+\_\+\+Get\+Max\+F\+PS (\begin{DoxyParamCaption}\item[{\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen}}]{p\+Screen }\end{DoxyParamCaption})}
+
+
+
+Retorna el máximo de frames por segundo actual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de útiles de pantalla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna el máximo de frames por segundo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_screen_utils_8h_af16bb8fd5aab12f320bfd47b57abb82c}\label{_screen_utils_8h_af16bb8fd5aab12f320bfd47b57abb82c}} 
+\index{Screen\+Utils.\+h@{Screen\+Utils.\+h}!Screen\+\_\+\+Get\+SX@{Screen\+\_\+\+Get\+SX}}
+\index{Screen\+\_\+\+Get\+SX@{Screen\+\_\+\+Get\+SX}!Screen\+Utils.\+h@{Screen\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Screen\+\_\+\+Get\+S\+X()}{Screen\_GetSX()}}
+{\footnotesize\ttfamily double Screen\+\_\+\+Get\+SX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene la anchura de la pantalla. 
+
+\begin{DoxyReturn}{Returns}
+Retorna la anchura de la pantalla. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_screen_utils_8h_a3d60d7850d49d93523126b048b2e1b4b}\label{_screen_utils_8h_a3d60d7850d49d93523126b048b2e1b4b}} 
+\index{Screen\+Utils.\+h@{Screen\+Utils.\+h}!Screen\+\_\+\+Get\+SY@{Screen\+\_\+\+Get\+SY}}
+\index{Screen\+\_\+\+Get\+SY@{Screen\+\_\+\+Get\+SY}!Screen\+Utils.\+h@{Screen\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Screen\+\_\+\+Get\+S\+Y()}{Screen\_GetSY()}}
+{\footnotesize\ttfamily double Screen\+\_\+\+Get\+SY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene la altura de la pantalla. 
+
+\begin{DoxyReturn}{Returns}
+Retorna la altura de la pantalla. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_screen_utils_8h_aab2cad5c7a877842d4b908567427a541}\label{_screen_utils_8h_aab2cad5c7a877842d4b908567427a541}} 
+\index{Screen\+Utils.\+h@{Screen\+Utils.\+h}!Screen\+\_\+\+Load@{Screen\+\_\+\+Load}}
+\index{Screen\+\_\+\+Load@{Screen\+\_\+\+Load}!Screen\+Utils.\+h@{Screen\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Screen\+\_\+\+Load()}{Screen\_Load()}}
+{\footnotesize\ttfamily \hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen} Screen\+\_\+\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Asigna memoria y retorna un puntero de tipo C\+Screen. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un puntero a la dirección de memoria asignada por esta. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_screen_utils_8h_ae52dccbfc11642fe3a4c2aa0227a3275}\label{_screen_utils_8h_ae52dccbfc11642fe3a4c2aa0227a3275}} 
+\index{Screen\+Utils.\+h@{Screen\+Utils.\+h}!Screen\+\_\+\+Resize\+Window@{Screen\+\_\+\+Resize\+Window}}
+\index{Screen\+\_\+\+Resize\+Window@{Screen\+\_\+\+Resize\+Window}!Screen\+Utils.\+h@{Screen\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Screen\+\_\+\+Resize\+Window()}{Screen\_ResizeWindow()}}
+{\footnotesize\ttfamily void Screen\+\_\+\+Resize\+Window (\begin{DoxyParamCaption}\item[{int}]{f\+SX,  }\item[{int}]{f\+SY }\end{DoxyParamCaption})}
+
+
+
+Cambia el tamaño de la pantalla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Int} & Anchura de la pantalla. \\
+\hline
+{\em Int} & Altura de la pantalla. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_screen_utils_8h_a27252f12da1d054818de21161e5d6467}\label{_screen_utils_8h_a27252f12da1d054818de21161e5d6467}} 
+\index{Screen\+Utils.\+h@{Screen\+Utils.\+h}!Screen\+\_\+\+Set\+Max\+F\+PS@{Screen\+\_\+\+Set\+Max\+F\+PS}}
+\index{Screen\+\_\+\+Set\+Max\+F\+PS@{Screen\+\_\+\+Set\+Max\+F\+PS}!Screen\+Utils.\+h@{Screen\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Screen\+\_\+\+Set\+Max\+F\+P\+S()}{Screen\_SetMaxFPS()}}
+{\footnotesize\ttfamily void Screen\+\_\+\+Set\+Max\+F\+PS (\begin{DoxyParamCaption}\item[{\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen}}]{p\+Screen,  }\item[{int}]{i\+Max\+F\+PS }\end{DoxyParamCaption})}
+
+
+
+Cambia el máximo de frames por segundo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de útiles de pantalla. \\
+\hline
+{\em Int} & Máximo de frames que se desea definir. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_screen_utils_8h_aae487cd11e99d60824f341a106c99b89}\label{_screen_utils_8h_aae487cd11e99d60824f341a106c99b89}} 
+\index{Screen\+Utils.\+h@{Screen\+Utils.\+h}!Screen\+\_\+\+Sync@{Screen\+\_\+\+Sync}}
+\index{Screen\+\_\+\+Sync@{Screen\+\_\+\+Sync}!Screen\+Utils.\+h@{Screen\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Screen\+\_\+\+Sync()}{Screen\_Sync()}}
+{\footnotesize\ttfamily float Screen\+\_\+\+Sync (\begin{DoxyParamCaption}\item[{\hyperlink{_screen_utils_8h_a5962029b4ccb4921a7e2f462f60a4a37}{C\+Screen}}]{p\+Screen,  }\item[{float}]{f\+Val }\end{DoxyParamCaption})}
+
+
+
+Calcula el valor sincronizado para todos los monitores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & Estructura creada de útiles de pantalla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna un valor float optimizado para que no dependa de la frecuencia del monitor. 
+\end{DoxyReturn}

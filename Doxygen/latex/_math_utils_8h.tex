@@ -1,0 +1,156 @@
+\hypertarget{_math_utils_8h}{}\section{Math\+Utils.\+h File Reference}
+\label{_math_utils_8h}\index{Math\+Utils.\+h@{Math\+Utils.\+h}}
+
+
+Utilizado para organizar el código y tener varias funciones matemáticas útiles de acceso fácil. \}.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_math_utils_8h_a598a3330b3c21701223ee0ca14316eca}\label{_math_utils_8h_a598a3330b3c21701223ee0ca14316eca}} 
+\#define {\bfseries PI}~3.\+14159265359
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_math_utils_8h_a600c4adc7305600183acc4584c88c127}{Maths\+\_\+\+Vector\+Normalize} (float $\ast$fX, float $\ast$fY)
+\begin{DoxyCompactList}\small\item\em Normaliza un vector dadas sus coordenadas X e Y. \end{DoxyCompactList}\item 
+void \hyperlink{_math_utils_8h_aa0e03beb60d171ab0b5a367389c17791}{Maths\+\_\+\+Sort\+Array} (int i\+Arr\mbox{[}$\,$\mbox{]}, int i\+Size)
+\begin{DoxyCompactList}\small\item\em Ordena de mayor a menor una array de ints. \end{DoxyCompactList}\item 
+float \hyperlink{_math_utils_8h_a544a56aae5525a5c7dfff8348f48dc33}{Maths\+\_\+\+Get\+Distance} (float f\+X1, float f\+Y1, float f\+X2, float f\+Y2)
+\begin{DoxyCompactList}\small\item\em Retorna la distancia que hay entre dos puntos 2D dados. \end{DoxyCompactList}\item 
+float \hyperlink{_math_utils_8h_a04f1e176463d893654b6cce42ab07ebf}{Maths\+\_\+\+Interpolate} (float from, float to, float factor)
+\begin{DoxyCompactList}\small\item\em Interpolación entre dos valores. \end{DoxyCompactList}\item 
+float \hyperlink{_math_utils_8h_ac58b8ebb990cb27e1ca202e80bb81106}{Maths\+\_\+\+Vector\+Module} (float fX, float fY)
+\begin{DoxyCompactList}\small\item\em Retorna el módulo del vector dado. \end{DoxyCompactList}\item 
+float \hyperlink{_math_utils_8h_a56473c8bfed3a2750d1303b3b2963147}{Maths\+\_\+\+Angle\+Between\+Vectors} (float x1, float y1, float xf1, float yf1, float x2, float y2, float xf2, float yf2)
+\begin{DoxyCompactList}\small\item\em Retorna el ángulo dado entre dos lineas según sus puntos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilizado para organizar el código y tener varias funciones matemáticas útiles de acceso fácil. \}. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_math_utils_8h_a56473c8bfed3a2750d1303b3b2963147}\label{_math_utils_8h_a56473c8bfed3a2750d1303b3b2963147}} 
+\index{Math\+Utils.\+h@{Math\+Utils.\+h}!Maths\+\_\+\+Angle\+Between\+Vectors@{Maths\+\_\+\+Angle\+Between\+Vectors}}
+\index{Maths\+\_\+\+Angle\+Between\+Vectors@{Maths\+\_\+\+Angle\+Between\+Vectors}!Math\+Utils.\+h@{Math\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Maths\+\_\+\+Angle\+Between\+Vectors()}{Maths\_AngleBetweenVectors()}}
+{\footnotesize\ttfamily float Maths\+\_\+\+Angle\+Between\+Vectors (\begin{DoxyParamCaption}\item[{float}]{x1,  }\item[{float}]{y1,  }\item[{float}]{xf1,  }\item[{float}]{yf1,  }\item[{float}]{x2,  }\item[{float}]{y2,  }\item[{float}]{xf2,  }\item[{float}]{yf2 }\end{DoxyParamCaption})}
+
+
+
+Retorna el ángulo dado entre dos lineas según sus puntos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Float} & Primera coordenada X del vector 1. \\
+\hline
+{\em Float} & Primera coordenada Y del vector 1. \\
+\hline
+{\em Float} & Segunda coordenada X del vector 1. \\
+\hline
+{\em Float} & Segunda coordenada Y del vector 1. \\
+\hline
+{\em Float} & Primera coordenada X del vector 2. \\
+\hline
+{\em Float} & Primera coordenada Y del vector 2. \\
+\hline
+{\em Float} & Segunda coordenada X del vector 2. \\
+\hline
+{\em Float} & Segunda coordenada Y del vector 2. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_math_utils_8h_a544a56aae5525a5c7dfff8348f48dc33}\label{_math_utils_8h_a544a56aae5525a5c7dfff8348f48dc33}} 
+\index{Math\+Utils.\+h@{Math\+Utils.\+h}!Maths\+\_\+\+Get\+Distance@{Maths\+\_\+\+Get\+Distance}}
+\index{Maths\+\_\+\+Get\+Distance@{Maths\+\_\+\+Get\+Distance}!Math\+Utils.\+h@{Math\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Maths\+\_\+\+Get\+Distance()}{Maths\_GetDistance()}}
+{\footnotesize\ttfamily float Maths\+\_\+\+Get\+Distance (\begin{DoxyParamCaption}\item[{float}]{f\+X1,  }\item[{float}]{f\+Y1,  }\item[{float}]{f\+X2,  }\item[{float}]{f\+Y2 }\end{DoxyParamCaption})}
+
+
+
+Retorna la distancia que hay entre dos puntos 2D dados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Float} & Coordenada X del primer punto. \\
+\hline
+{\em Float} & Coordenada Y del primer punto. \\
+\hline
+{\em Float} & Coordenada X del segundo punto. \\
+\hline
+{\em Float} & Coordenada Y del segundo punto. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_math_utils_8h_a04f1e176463d893654b6cce42ab07ebf}\label{_math_utils_8h_a04f1e176463d893654b6cce42ab07ebf}} 
+\index{Math\+Utils.\+h@{Math\+Utils.\+h}!Maths\+\_\+\+Interpolate@{Maths\+\_\+\+Interpolate}}
+\index{Maths\+\_\+\+Interpolate@{Maths\+\_\+\+Interpolate}!Math\+Utils.\+h@{Math\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Maths\+\_\+\+Interpolate()}{Maths\_Interpolate()}}
+{\footnotesize\ttfamily float Maths\+\_\+\+Interpolate (\begin{DoxyParamCaption}\item[{float}]{from,  }\item[{float}]{to,  }\item[{float}]{factor }\end{DoxyParamCaption})}
+
+
+
+Interpolación entre dos valores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Float} & Valor de donde se parte. \\
+\hline
+{\em Float} & Valor a donde se quiere llegar. \\
+\hline
+{\em Float} & Factor de velocidad de interpolación. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_math_utils_8h_aa0e03beb60d171ab0b5a367389c17791}\label{_math_utils_8h_aa0e03beb60d171ab0b5a367389c17791}} 
+\index{Math\+Utils.\+h@{Math\+Utils.\+h}!Maths\+\_\+\+Sort\+Array@{Maths\+\_\+\+Sort\+Array}}
+\index{Maths\+\_\+\+Sort\+Array@{Maths\+\_\+\+Sort\+Array}!Math\+Utils.\+h@{Math\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Maths\+\_\+\+Sort\+Array()}{Maths\_SortArray()}}
+{\footnotesize\ttfamily void Maths\+\_\+\+Sort\+Array (\begin{DoxyParamCaption}\item[{int}]{i\+Arr\mbox{[}$\,$\mbox{]},  }\item[{int}]{i\+Size }\end{DoxyParamCaption})}
+
+
+
+Ordena de mayor a menor una array de ints. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Int$\ast$} & Array de ints a ordenar. \\
+\hline
+{\em Int} & Tamaño de la array que se quiere ordenar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_math_utils_8h_ac58b8ebb990cb27e1ca202e80bb81106}\label{_math_utils_8h_ac58b8ebb990cb27e1ca202e80bb81106}} 
+\index{Math\+Utils.\+h@{Math\+Utils.\+h}!Maths\+\_\+\+Vector\+Module@{Maths\+\_\+\+Vector\+Module}}
+\index{Maths\+\_\+\+Vector\+Module@{Maths\+\_\+\+Vector\+Module}!Math\+Utils.\+h@{Math\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Maths\+\_\+\+Vector\+Module()}{Maths\_VectorModule()}}
+{\footnotesize\ttfamily float Maths\+\_\+\+Vector\+Module (\begin{DoxyParamCaption}\item[{float}]{fX,  }\item[{float}]{fY }\end{DoxyParamCaption})}
+
+
+
+Retorna el módulo del vector dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Float} & Coordenada X del vector. \\
+\hline
+{\em Float} & Coordenada Y del vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_math_utils_8h_a600c4adc7305600183acc4584c88c127}\label{_math_utils_8h_a600c4adc7305600183acc4584c88c127}} 
+\index{Math\+Utils.\+h@{Math\+Utils.\+h}!Maths\+\_\+\+Vector\+Normalize@{Maths\+\_\+\+Vector\+Normalize}}
+\index{Maths\+\_\+\+Vector\+Normalize@{Maths\+\_\+\+Vector\+Normalize}!Math\+Utils.\+h@{Math\+Utils.\+h}}
+\subsubsection{\texorpdfstring{Maths\+\_\+\+Vector\+Normalize()}{Maths\_VectorNormalize()}}
+{\footnotesize\ttfamily void Maths\+\_\+\+Vector\+Normalize (\begin{DoxyParamCaption}\item[{float $\ast$}]{fX,  }\item[{float $\ast$}]{fY }\end{DoxyParamCaption})}
+
+
+
+Normaliza un vector dadas sus coordenadas X e Y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Float} & Componente X del vector a normalizar. \\
+\hline
+{\em Float} & Componente Y del vector a normalizar. \\
+\hline
+\end{DoxyParams}
